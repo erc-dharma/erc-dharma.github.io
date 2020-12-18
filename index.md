@@ -1,5 +1,18 @@
 # ERC-DHARMA, Symbol Taxonomy
 
+1. [daṇḍa](https://erc-dharma.github.io/danda)
+2. [double daṇḍa](https://erc-dharma.github.io/doubledanda)
+3. [half daṇḍa](https://erc-dharma.github.io/halfdanda)
+4. [Short horizontal strokes](https://erc-dharma.github.io/horizontalstrokes)
+5. [Dots](https://erc-dharma.github.io/dots)
+6. [Circles](https://erc-dharma.github.io/circles)
+7. [Spirals](https://erc-dharma.github.io/spirals)
+8. [Crosses](https://erc-dharma.github.io/crosses)
+9. [Florets](https://erc-dharma.github.io/florets)
+10. [Gomūtra](https://erc-dharma.github.io/gomutra)
+11. [Oṁ/Siddham](https://erc-dharma.github.io/siddham)
+12. [Miscellaneous](https://erc-dharma.github.io/miscellaneous)
+
 
 ## Preliminary Remarks
 - as indicated in EGD §4.2 (to which we refer for further details), the use of a <g> tag is mandatory on all symbol characters
