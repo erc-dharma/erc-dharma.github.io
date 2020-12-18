@@ -3,39 +3,38 @@
 
 ## Tall, single vertical bars (daṇḍa)
 - for symbols that consist of, or are palaeographically derived from, a single vertical bar that is about as tall as an average character body, use the genus token “danda”
-- the transliteration shorthand | stands for <g type="danda">.</g>
-- the transliteration shorthand / stands for <g type="dandaOrnate">.</g>
-- a <g> element (empty or containing a . character) with a @type starting with “danda” shall be provisionally displayed as |
-
-<!-- model for table:
+- the transliteration shorthand | stands for `<g type="danda">.</g>`
+- the transliteration shorthand / stands for `<g type="dandaOrnate">.</g>`
+- a `<g>` element (empty or containing a . character) with a `@type` starting with “danda” shall be provisionally displayed as |
 
 |archetype|description|preferred token|specimens|alternative token(s)|remarks, clipping source|
 |:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
-|||||||
-
--->
-|archetype|description|preferred token|specimens|alternative token(s)|remarks, clipping source|
-|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
-||plain vertical bar|dandaPlain||||
+|![Image](images/image78.jpg)|plain vertical bar|dandaPlain||||
 ||vertical bar with a hook on top|dandaHooked||||
 ||vertical bar crossed by a predominantly horizontal line|dandaCross||||
-||vertical bar with a headmark or small horizontal line on top|dandaSerif|||tfb-vengicalukya-epigraphy/CalE41-Diggubarru-Bhima2|
-||vertical bar with more complex ornamentation|dandaOrnate||||
+||vertical bar with a headmark or small horizontal line on top|dandaSerif|![Image](images/image1.jpg)||tfb-vengicalukya-epigraphy/CalE41-Diggubarru-Bhima2|
+|![Image](images/image69.jpg)|vertical bar with more complex ornamentation|dandaOrnate||||
 
 ## Tall, double vertical bars (double daṇḍa)
 - for symbols that consist of, or are palaeographically derived from, a double vertical bar as typically used for punctuation in many Indic scripts, use the genus token “ddanda” (for “double daṇḍa”)
-- the transliteration shorthand || stands for <g type="ddanda">.</g>
-- the transliteration shorthand // stands for <g type="ddandaOrnate">.</g>
-- a <g> element (empty or containing a . character) with a @type starting with “ddanda” shall be provisionally displayed as ǁ
+- the transliteration shorthand || stands for `<g type="ddanda">.</g>`
+- the transliteration shorthand // stands for `<g type="ddandaOrnate">.</g>`
+- a `<g>` element (empty or containing a . character) with a `@type` starting with “ddanda” shall be provisionally displayed as ǁ
 
 |archetype|description|preferred token|specimens|alternative token(s)|remarks, clipping source|
 |:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
-|||||||
+|![Image](images/image61.jpg)|plain double vertical bar|ddandaPlain||||
+||double vertical bar with a hook on top of one or both bars| ddandaHooked|1. ![Image](images/image81.png) 2. ![Image](images/image25.png)|| 1. Guntur, Java, very early 10th c.  2. Munduan, Java, very early 9th c.|
+||double vertical bar crossed by a predominantly horizontal line<sup><a href="#cmnt6" id="cmnt_ref6">[f]</a></sup><sup><a href="#cmnt7" id="cmnt_ref7">[g]</a></sup>|ddandaCross| 1. </![Image](images/image53.png) 2. ![Image](images/image14.png)|| 1. Pandaan inscription, Java, 11th c. 2. </span><span class="c3 c40">Guntur inscription, Java, very early 10th c.|
+|| double vertical bar with a headmark or small horizontal line on top| ddandaSerif| 1. 1. Pandaan inscription, Java, 11th c.
+2. Guntur inscription, Java, very early 10th c.
+images/image34.jpg)|| 1. tfb-vengicalukya-epigraphy/CalE41-Diggubarru-Bhima2|
+|![Image](images/image76.png)| double vertical bar with more complex ornamentation| ddandaOrnate| 1.![Image](images/image23.png) 2. ![Image](images/image71.png) 3. ![Image](images/image51.png) lana&#7717; // n&#7771;pa 4. ![Image](images/image48.png)||1.2.3. INSPallava00314 4. MpuMano (Java, 13th c.)|
 
 ## Short vertical bars (half daṇḍa)
 - for symbols that consist of, or are palaeographically derived from, a short, predominantly vertical bar that may be straight or curved, use the genus token “comma”
-- the transliteration shorthand , stands for <g type="comma">.</g>
-- a <g> element (empty or containing a . character) with a @type starting with “comma” shall be provisionally displayed as ,
+- the transliteration shorthand , stands for ``<g type="comma">.</g>`
+- a `<g>` element (empty or containing a . character) with a @type starting with “comma” shall be provisionally displayed as ,
 
 |archetype|description|preferred token|specimens|alternative token(s)|remarks, clipping source|
 |:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
