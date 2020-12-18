@@ -12,6 +12,9 @@
 10. [Gomūtra](https://erc-dharma.github.io/gomutra)
 11. [Oṁ/Siddham](https://erc-dharma.github.io/siddham)
 12. [Miscellaneous](https://erc-dharma.github.io/miscellaneous)
+13. [Unclear and unknown symbols](https://erc-dharma.github.io/unknown)
+14. [Multiple symbols](https://erc-dharma.github.io/multiplesymbols)
+
 
 
 ## Preliminary Remarks
