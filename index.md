@@ -1,8 +1,8 @@
 # ERC-DHARMA, Symbol Taxonomy
 
-1. [daṇḍa](https://erc-dharma.github.io/danda)
-2. [double daṇḍa](https://erc-dharma.github.io/doubledanda)
-3. [half daṇḍa](https://erc-dharma.github.io/halfdanda)
+1. [Daṇḍa](https://erc-dharma.github.io/danda)
+2. [Double daṇḍa](https://erc-dharma.github.io/doubledanda)
+3. [Half daṇḍa](https://erc-dharma.github.io/halfdanda)
 4. [Short horizontal strokes](https://erc-dharma.github.io/horizontalstrokes)
 5. [Dots](https://erc-dharma.github.io/dots)
 6. [Circles](https://erc-dharma.github.io/circles)
