@@ -7,12 +7,12 @@ a <g> element (empty or containing a . character) with a @type starting with “
 |:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
 |ABC&#9675;|small circle (noticeably smaller than a typical character body), placed at median height; Cambodian “Chicken egg”|circleMed||circle circleSmall||
 |ABC&#9711;|large circle (about the size of a typical character body or larger)|circleLarge||||
-|ABC&deg;|small circle above median line|circleHigh|1. ![Image](images/image33.jpg) (the two circles on the left are a visarga; the symbol is the single circle on the right)||1. tfb-badamicalukya-epigraphy/CalE01-Makarappi-Pulakesin2|
-|ABC&#9675;|small circle below median line|circleLow|1. ![Image](images/image43.jpg)||1. tfb-badamicalukya-epigraphy/CalE01-Makarappi-Pulakesin2|
-||circle with cross inside|circleCross|1. ![Image](images/image32.jpg)|||
-||two circles, one above the other, like a visarga|circleDouble|1. ![Image](images/image35.jpg)|||
-|![Image](images/image17.jpg)|circle with a floret inside|circleFloret||circleFinial||
-|![Image](images/image39.jpg)|circle topped by a double (or multiple) curved stroke|circleHorned|1.![Image](images/image44.png) 2.![Image](images/image60.png) 3.![Image](images/image37.png)|egg2apo||
-|![Image](images/image6.jpg)|circle containing one or more concentric circles, Cambodian &ldquo;Chicken eye&rdquo;|circleConcentric|1.![Image](images/image06.png) 2.![Image](images/image05.png)|eye circleTarget||
+|ABC&deg;|small circle above median line|circleHigh|1. ![Image](images/image33.png) (the two circles on the left are a visarga; the symbol is the single circle on the right)||1. tfb-badamicalukya-epigraphy/CalE01-Makarappi-Pulakesin2|
+|ABC&#9675;|small circle below median line|circleLow|1. ![Image](images/image43.png)||1. tfb-badamicalukya-epigraphy/CalE01-Makarappi-Pulakesin2|
+||circle with cross inside|circleCross|1. ![Image](images/image32.png)|||
+||two circles, one above the other, like a visarga|circleDouble|1. ![Image](images/image35.png)|||
+|![Image](images/image17.png)|circle with a floret inside|circleFloret||circleFinial||
+|![Image](images/image39.png)|circle topped by a double (or multiple) curved stroke|circleHorned|1.![Image](images/image44.png) 2.![Image](images/image60.png) 3.![Image](images/image37.png)|egg2apo||
+|![Image](images/image06.png)|circle containing one or more concentric circles, Cambodian &ldquo;Chicken eye&rdquo;|circleConcentric|1.![Image](images/image06.png) 2.![Image](images/image05.png)|eye circleTarget||
 |&#9737;|circle with a concentric dot, Cambodian &ldquo;Chicken eye&rdquo;|circleTarget||eye||
 ||three small circles arranged in a triangle|circleTriangle||||

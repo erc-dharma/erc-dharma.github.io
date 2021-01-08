@@ -6,8 +6,8 @@
 
 |archetype|description|preferred token|specimens|alternative token(s)|remarks, clipping source|
 |:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
-|![Image](images/image78.jpg)|plain vertical bar|dandaPlain||||
+|![Image](images/image78.png)|plain vertical bar|dandaPlain||||
 ||vertical bar with a hook on top|dandaHooked||||
 ||vertical bar crossed by a predominantly horizontal line|dandaCross||||
 ||vertical bar with a headmark or small horizontal line on top|dandaSerif|![Image](images/image01.jpg)||tfb-vengicalukya-epigraphy/CalE41-Diggubarru-Bhima2|
-|![Image](images/image69.jpg)|vertical bar with more complex ornamentation|dandaOrnate||||
+|![Image](images/image69.png)|vertical bar with more complex ornamentation|dandaOrnate||||

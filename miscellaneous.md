@@ -4,6 +4,6 @@
 
 |archetype|description|preferred token|specimens|alternative token(s)|remarks, clipping source|
 |:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
-|![Image](images/image59.jpg)|circle with one or more curved lines|tennisBall|1. ![Image](images/image54.jpg)||1. Wurudu Kidul, Java, 929 CE|
-|![Image](images/image74.jpg)||squiggleVertical||braceCurlyClose||
+|![Image](images/image59.jpg)|circle with one or more curved lines|tennisBall|1. ![Image](images/image54.png)||1. Wurudu Kidul, Java, 929 CE|
+|![Image](images/image74.png)||squiggleVertical||braceCurlyClose||
 
