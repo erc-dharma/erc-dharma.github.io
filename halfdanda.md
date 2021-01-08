@@ -5,6 +5,6 @@
 
 |archetype|description|preferred token|specimens|alternative token(s)|remarks, clipping source|
 |:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
-|&#7006;|a short, curved vertical stroke at median height|comma|1. ![Image](images/image9.png)||1. Kurangan, Java, 807 &#346;aka|
+|&#7006;|a short, curved vertical stroke at median height|comma|1. ![Image](images/image09.png)||1. Kurangan, Java, 807 &#346;aka|
 ||a very short vertical line at median height|commaSmall|1.![Image](images/image56.jpg)|dotCommaMid|1. tfb-vengicalukya-epigraphy/CalE29-Ederu-Vijayaditya1-2|
 ||a short vertical bar raised to head height|commaHigh|1. ![Image](images/image22.png)||1. tfb-vengicalukya-epigraphy/CalE36-Cevuru-Amma1|

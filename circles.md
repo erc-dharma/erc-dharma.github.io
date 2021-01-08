@@ -13,7 +13,6 @@ a <g> element (empty or containing a . character) with a @type starting with “
 ||two circles, one above the other, like a visarga|circleDouble|1. ![Image](images/image35.jpg)|||
 |![Image](images/image17.jpg)|circle with a floret inside|circleFloret||circleFinial||
 |![Image](images/image39.jpg)|circle topped by a double (or multiple) curved stroke|circleHorned|1.![Image](images/image44.png) 2.![Image](images/image60.png) 3.![Image](images/image37.png)|egg2apo||
-|![Image](images/image6.jpg)|circle containing one or more concentric circles, Cambodian &ldquo;Chicken eye&rdquo;|circleConcentric|1.![Image](images/image6.png) 2.![Image](images/image5.png)|eye circleTarget||
+|![Image](images/image6.jpg)|circle containing one or more concentric circles, Cambodian &ldquo;Chicken eye&rdquo;|circleConcentric|1.![Image](images/image06.png) 2.![Image](images/image05.png)|eye circleTarget||
 |&#9737;|circle with a concentric dot, Cambodian &ldquo;Chicken eye&rdquo;|circleTarget||eye||
 ||three small circles arranged in a triangle|circleTriangle||||
-

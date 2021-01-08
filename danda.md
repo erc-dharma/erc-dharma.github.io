@@ -9,5 +9,5 @@
 |![Image](images/image78.jpg)|plain vertical bar|dandaPlain||||
 ||vertical bar with a hook on top|dandaHooked||||
 ||vertical bar crossed by a predominantly horizontal line|dandaCross||||
-||vertical bar with a headmark or small horizontal line on top|dandaSerif|![Image](images/image1.jpg)||tfb-vengicalukya-epigraphy/CalE41-Diggubarru-Bhima2|
+||vertical bar with a headmark or small horizontal line on top|dandaSerif|![Image](images/image01.jpg)||tfb-vengicalukya-epigraphy/CalE41-Diggubarru-Bhima2|
 |![Image](images/image69.jpg)|vertical bar with more complex ornamentation|dandaOrnate||||
