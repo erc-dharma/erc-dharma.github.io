@@ -14,14 +14,14 @@
 |Restoration based on previous edition (not assessable)|`dha<supplied reason="undefined" evidence="previouseditor"/>rma</supplied>`||
 |Restoration based on parallel|`dha<supplied reason="lost" evidence="parallel">abc</supplied>`||
 |Unstandard|`<orig>dhamma</orig>`|<span style="color:magenta;">¡dharma!</span> [colour: magenta]|
-|Standardisation|`<reg>dharmma</reg>`<br/>  NB: `<reg>` is used only within `<choice>`|<span style="color:blue;">⟨dharmma⟩</span> [colour: blue]|
+|Standardisation|`<reg>dharmma</reg>`  NB: `<reg>` is used only within `<choice>`|<span style="color:blue;">⟨dharmma⟩</span> [colour: blue]|
 ||`<choice>  <orig>a</sic>  <reg>z</ref>  </choice>`|<span style="color:magenta;">¡a!</span><span style="color:blue;">⟨z⟩</span>|
 |Uncorrect|`<sic>dhoma</sic>`|<span style="color:red;">¿dhoma?</span> [colour: red]|
 |Correction|`<corr>dharmma</corr>`|<span style="color:green;">⟨dharmma⟩</span> [colour: green]|
 ||`dha<choice><sic>t</sic><corr>r</corr></choice>ma`|dha<span style="color:red;">¿t?</span><span style="color:green;">⟨r⟩</span>ma|
 |Surplus|`dharma<surplus>ma</surplus>`|dharma{ma}|
 |Lacuna (<gap>)|`<gap reason="lost" extent="unknown" unit="character"/>`|[...]|
-||`<gap reason="lost" unit="character" quantity="1"/>`<br/>  `<gap reason="lost" unit="character" quantity="3"/>`|[1+] <br/> [3+]|
+||`<gap reason="lost" unit="character" quantity="1"/>`<br/>  `<gap reason="lost" unit="character" quantity="3"/>`|[1+]  [3+]|
 ||`<gap reason="lost" unit="character" quantity="1" precision="low"/>`<br/>  `<gap reason="lost" unit="character" quantity="3"precision="low">`|[ca. 3+]|
 ||`<gap reason="illegible" extent="unknown" unit="character"/>`|[...]|
 ||`<gap reason="illegible" unit="character" quantity="1"/>`<br/>  `<gap reason="illegible" unit="character" quantity="3"/>`|[1x]<br/>  [3x]|
@@ -42,7 +42,7 @@
 |Consonant|`<seg type="component" subtype="body"/>`||
 |Vowel|`<seg type="component" subtype="prescript"/>`<br/>  `<seg type="component" subtype="postcript"/>``||
 |Symbol|`<g type="symbol" subtype="golfball"/>`<br/>  `<g type="symbol" subtype="kalam"/>`||
-|Grantha|`<hi rend="grantha">svasti śrī</hi>`|svasti śrī|
+|Grantha|`<hi rend="grantha">svasti śrī</hi>`|**svasti śrī**|
 |Italics|`<hi rend="italic">dharma</hi>`|*dharma*|
 |Stanza|`<lg n="1" met="āryā">`||
 ||`<lg n="2" met="+++++-++-+=">`|-----⏑--⏑-⏓|
@@ -53,4 +53,4 @@
 ||Kantacēṉaṉ `<supplied reason="explanation">Skt. Skandasena</supplied>`|Kantacēṉaṉ (Skt. Skandasena)|
 ||Temple `<supplied reason="explanation"><foreign>tēvakulam</foreign></supplied>`|Temple (tēvakulam)|
 ||Fiftieth `<supplied reason="subaudible">year</supplied>` of Nantippōttaracar|Fiftieth [year] of Nantippōttaracar|
-||`@enjamb`||
+||``@enjamb`||
