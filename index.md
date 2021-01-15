@@ -14,7 +14,7 @@
 |Restoration based on previous edition (not assessable)|`dha<supplied reason="undefined" evidence="previouseditor"/>rma</supplied>`||
 |Restoration based on parallel|`dha<supplied reason="lost" evidence="parallel">abc</supplied>`||
 |Unstandard|`<orig>dhamma</orig>`|<span style="color:magenta;">¡dharma!</span> [colour: magenta]|
-|Standardisation|`<reg>dharmma</reg>`  NB: `<reg>` is used only within `<choice>`|<span style="color:blue;">⟨dharmma⟩</span> [colour: blue]|
+|Standardisation|`<reg>dharmma</reg>`  <br/>NB: `<reg>` is used only within `<choice>`|<span style="color:blue;">⟨dharmma⟩</span> [colour: blue]|
 ||`<choice>  <orig>a</sic>  <reg>z</ref>  </choice>`|<span style="color:magenta;">¡a!</span><span style="color:blue;">⟨z⟩</span>|
 |Uncorrect|`<sic>dhoma</sic>`|<span style="color:red;">¿dhoma?</span> [colour: red]|
 |Correction|`<corr>dharmma</corr>`|<span style="color:green;">⟨dharmma⟩</span> [colour: green]|
