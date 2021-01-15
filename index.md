@@ -7,21 +7,21 @@
 |Word divided across lines|`<lb n="1"/>…dhar`<br/>  `<lb n="2" break="no"/>ma…`|(1)…dhar-<br/>  (2)ma…|
 |Tentative reading  (letters ambiguous outside of their context)|`dha<unclear>rma</unclear>`|dha(rma)|
 ||`dha<unclear cert="low">rma</unclear>`|dha(rma?)|
-|Unclear, could be read either a or o|`<choice>  <unclear>a</unclear>  <unclear>o</unclear>  </choice>`|(a/o)|
+|Unclear, could be read either a or o|`<choice>`<br/>  `<unclear>a</unclear>`<br/>  `<unclear>o</unclear>`<br/>  `</choice>`|(a/o)|
 |Lacuna restored (supplied)|`dha<supplied reason="lost">r</supplied>ma`  `dha<supplied reason="illegible">r</supplied>ma`|dha[rma]<br/>  dha[rma]|
 ||`dha<supplied reason="lost" cert="low">r</supplied>ma`  `dha<supplied reason="illegible" cert="low">r</supplied>ma`|dha[r?]ma<br/>  dha[r?]ma|
 ||`dha<supplied reason="omitted">rma</supplied>`|dha⟨rma⟩|
 |Restoration based on previous edition (not assessable)|`dha<supplied reason="undefined" evidence="previouseditor"/>rma</supplied>`||
 |Restoration based on parallel|`dha<supplied reason="lost" evidence="parallel">abc</supplied>`||
 |Unstandard|`<orig>dhamma</orig>`|<span style="color:magenta;">¡dharma!</span> [colour: magenta]|
-|Standardisation|`<reg>dharmma</reg>`  NB: `<reg>` is used only within `<choice>`|<span style="color:blue;">⟨dharmma⟩</span> [colour: blue]|
+|Standardisation|`<reg>dharmma</reg>`<br/>  NB: `<reg>` is used only within `<choice>`|<span style="color:blue;">⟨dharmma⟩</span> [colour: blue]|
 ||`<choice>  <orig>a</sic>  <reg>z</ref>  </choice>`|<span style="color:magenta;">¡a!</span><span style="color:blue;">⟨z⟩</span>|
 |Uncorrect|`<sic>dhoma</sic>`|<span style="color:red;">¿dhoma?</span> [colour: red]|
 |Correction|`<corr>dharmma</corr>`|<span style="color:green;">⟨dharmma⟩</span> [colour: green]|
 ||`dha<choice><sic>t</sic><corr>r</corr></choice>ma`|dha<span style="color:red;">¿t?</span><span style="color:green;">⟨r⟩</span>ma|
 |Surplus|`dharma<surplus>ma</surplus>`|dharma{ma}|
 |Lacuna (<gap>)|`<gap reason="lost" extent="unknown" unit="character"/>`|[...]|
-||`<gap reason="lost" unit="character" quantity="1"/>`<br/>  `<gap reason="lost" unit="character" quantity="3"/>`|[1+]  [3+]|
+||`<gap reason="lost" unit="character" quantity="1"/>`<br/>  `<gap reason="lost" unit="character" quantity="3"/>`|[1+] <br/> [3+]|
 ||`<gap reason="lost" unit="character" quantity="1" precision="low"/>`<br/>  `<gap reason="lost" unit="character" quantity="3"precision="low">`|[ca. 3+]|
 ||`<gap reason="illegible" extent="unknown" unit="character"/>`|[...]|
 ||`<gap reason="illegible" unit="character" quantity="1"/>`<br/>  `<gap reason="illegible" unit="character" quantity="3"/>`|[1x]<br/>  [3x]|
