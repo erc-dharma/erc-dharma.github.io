@@ -3,13 +3,13 @@
 
 ||DHARMA markup|DHARMA display|
 |:-----:|:-----:|:-----:|
-|Line beginning|`<lb n="1"/>svasti śrī  <lb n="2"/>kōpparakēcari` |(1)  (2)|
-|Word divided across lines|`<lb n="1"/>…dhar  <lb n="2" break="no"/>ma…`|(1)…dhar-  (2)ma…|
+|Line beginning|`<lb n="1"/>svasti śrī`<br/>   `<lb n="2"/>kōpparakēcari` |(1)<br/>  (2)|
+|Word divided across lines|`<lb n="1"/>…dhar`<br/>  `<lb n="2" break="no"/>ma…`|(1)…dhar-<br/>  (2)ma…|
 |Tentative reading  (letters ambiguous outside of their context)|`dha<unclear>rma</unclear>`|dha(rma)|
-||dha<unclear cert="low">rma</unclear>|dha(rma?)|
+||`dha<unclear cert="low">rma</unclear>`|dha(rma?)|
 |Unclear, could be read either a or o|`<choice>  <unclear>a</unclear>  <unclear>o</unclear>  </choice>`|(a/o)|
-|Lacuna restored (supplied)|`dha<supplied reason="lost">r</supplied>ma`  `dha<supplied reason="illegible">r</supplied>ma`|dha[rma]  dha[rma]|
-||`dha<supplied reason="lost" cert="low">r</supplied>ma`  `dha<supplied reason="illegible" cert="low">r</supplied>ma`|dha[r?]ma  dha[r?]ma|
+|Lacuna restored (supplied)|`dha<supplied reason="lost">r</supplied>ma`  `dha<supplied reason="illegible">r</supplied>ma`|dha[rma]<br/>  dha[rma]|
+||`dha<supplied reason="lost" cert="low">r</supplied>ma`  `dha<supplied reason="illegible" cert="low">r</supplied>ma`|dha[r?]ma<br/>  dha[r?]ma|
 ||`dha<supplied reason="omitted">rma</supplied>`|dha⟨rma⟩|
 |Restoration based on previous edition (not assessable)|`dha<supplied reason="undefined" evidence="previouseditor"/>rma</supplied>`||
 |Restoration based on parallel|`dha<supplied reason="lost" evidence="parallel">abc</supplied>`||
@@ -27,7 +27,7 @@
 ||`<gap reason="illegible" unit="character" quantity="1"/>`  `<gap reason="illegible" unit="character" quantity="3"/>`|[1x]  [3x]|
 ||`<gap reason="illegible" unit="character" quantity="1" precision="low"/>`  `<gap reason="illegible" unit="character" quantity="3"precision="low"/>`|[ca. 3x]|
 ||`<gap reason="undefined" extent="unknown" unit="character"/>`|[...]|
-||`<gap reason="undefined" unit="character" quantity="1"/>`  `<gap reason=”undefined" unit="character" quantity="3"/>`|[1\*]  \[3\*]|
+||`<gap reason="undefined" unit="character" quantity="1"/>`<br/>  `<gap reason=”undefined" unit="character" quantity="3"/>`|[1\*]<br/>  \[3\*]|
 ||`<gap reason="undefined" unit="character" quantity="1" precision="low"/>`  `<gap reason="undefined" unit="character" quantity="3"precision="low"/>`|[ca. 1\*]  [ca. 3\*]|
 |Line lost|`<gap reason="lost/illegible/undefined" quantity="1" unit="line"/>`|[1 line lost/illegible/ost or illegible]|
 |Line(s) lost, extent unknown|`<gap reason="lost/illegible/undefined" extent="unknown" unit="line"/>`|[unknown number of lines lost/illegible/lost or illegible]|
@@ -53,4 +53,4 @@
 ||Kantacēṉaṉ `<supplied reason="explanation">Skt. Skandasena</supplied>`|Kantacēṉaṉ (Skt. Skandasena)|
 ||Temple `<supplied reason="explanation"><foreign>tēvakulam</foreign></supplied>`|Temple (tēvakulam)|
 ||Fiftieth `<supplied reason="subaudible">year</supplied>` of Nantippōttaracar|Fiftieth [year] of Nantippōttaracar|
-||``@enjamb`||
+||`@enjamb`||
