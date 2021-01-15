@@ -53,4 +53,4 @@
 ||Kantacēṉaṉ `<supplied reason="explanation">Skt. Skandasena</supplied>`|Kantacēṉaṉ (Skt. Skandasena)|
 ||Temple `<supplied reason="explanation"><foreign>tēvakulam</foreign></supplied>`|Temple (tēvakulam)|
 ||Fiftieth `<supplied reason="subaudible">year</supplied>` of Nantippōttaracar|Fiftieth [year] of Nantippōttaracar|
-||``@enjamb`||
+||`@enjamb`||
