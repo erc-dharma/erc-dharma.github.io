@@ -54,3 +54,4 @@
 ||Temple `<supplied reason="explanation"><foreign>tēvakulam</foreign></supplied>`|Temple (tēvakulam)|
 ||Fiftieth `<supplied reason="subaudible">year</supplied>` of Nantippōttaracar|Fiftieth [year] of Nantippōttaracar|
 ||`@enjamb`||
+|substitution|`bottun<subst><del rend="corrected">u</del><add place="overstrike">a</add></subst>`|bottun{{u}}⟨⟨a⟩⟩|
