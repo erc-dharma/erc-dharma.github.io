@@ -1,9 +1,3 @@
-layout: page
-title: "Editorial Conventions"
-markdown: kramdown
-permalink: https://erc-dharma.github.io/editorial.md
-url: 'https://erc-dharma.github.io/editorial.md'
-
 |Description|DHARMA markup|DHARMA display|
 |:-----:|:-----:|:-----:|
 |Line beginning|`<lb n="1"/>svasti śrī`<br/>   `<lb n="2"/>kōpparakēcari` |(1)<br/>  (2)|

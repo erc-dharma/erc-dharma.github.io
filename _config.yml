@@ -1,1 +1,4 @@
 theme: jekyll-theme-minimal
+layout: page
+markdown: kramdown
+url: 'https://erc-dharma.github.io/'
