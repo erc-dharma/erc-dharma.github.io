@@ -43,9 +43,9 @@
 |Italics|`<hi rend="italic">dharma</hi>`|*dharma*|
 |Stanza|`<lg n="1" met="āryā">`||
 ||`<lg n="2" met="+++++-++-+=">`|-----⏑--⏑-⏓|
-|verses|`<l n="ab"><lb n="1"/>kāritam idan nṛpatinā`|kāritam idan nṛpatinā|
-||`<l n="a"><lb n="1"/>kāritam idan nṛpatinā`|kāritam idan nṛpatinā|
-||`<l n="a"><lb n="1"/>kāritam idan nṛpatinā</l>`<br/>  `<l n="b"><lb n="3"/>śrī-śikhari-pallaveśvararam iti</l>`|kāritam idan nṛpatinā<br/> (Ident)śrī-śikhari-pallaveśvararam iti|
+|verses|`<l n="ab"><lb n="1"/>kāritam idan nr̥patinā`|kāritam idan nr̥patinā|
+||`<l n="a"><lb n="1"/>kāritam idan nr̥patinā`|kāritam idan nr̥patinā|
+||`<l n="a"><lb n="1"/>kāritam idan nr̥patinā</l>`<br/>  `<l n="b"><lb n="3"/>śrī-śikhari-pallaveśvararam iti</l>`|kāritam idan nr̥patinā<br/> (Ident)śrī-śikhari-pallaveśvararam iti|
 ||`<foreign>dharma</foreign>`|*dharma*|
 ||Kantacēṉaṉ `<supplied reason="explanation">Skt. Skandasena</supplied>`|Kantacēṉaṉ (Skt. Skandasena)|
 ||Temple `<supplied reason="explanation"><foreign>tēvakulam</foreign></supplied>`|Temple (tēvakulam)|
