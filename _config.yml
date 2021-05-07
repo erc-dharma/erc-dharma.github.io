@@ -1,3 +1,5 @@
 layout: page
 markdown: kramdown
 url: 'https://erc-dharma.github.io/'
+# Google Analytics
+google_analytics: G-CJ5KNWMVC7
