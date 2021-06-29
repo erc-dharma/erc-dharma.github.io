@@ -35,7 +35,7 @@
 ||`<seg met="+++-++"><gap reason="lost" quantity="6" unit="character">`|[–––⏑––]|
 ||`<gap reason="illegible" quantity="10" unit="character" precision="low"/><seg met="+++-++"><gap reason="illegible" quantity="6" unit="character"/></seg><supplied reason="lost" evidence="parallel">abc</supplied>`|[ca.10x–––⏑––abc]|
 |Scribal addition|`dha<add>rma</add>`|dha⟨⟨rma⟩⟩|
-|Scribal deletion|`dharma<del>ma</del>`|dharma{{ma}}|
+|Scribal deletion|`dharma<del>ma</del>`|`dharma{{ma}}`|
 |Consonant|`<seg type="component" subtype="body"/>`||
 |Vowel|`<seg type="component" subtype="prescript"/>`<br/>  `<seg type="component" subtype="postcript"/>``||
 |Symbol|`<g type="symbol" subtype="golfball"/>`<br/>  `<g type="symbol" subtype="kalam"/>`||
@@ -51,4 +51,4 @@
 ||Temple `<supplied reason="explanation"><foreign>tēvakulam</foreign></supplied>`|Temple (tēvakulam)|
 ||Fiftieth `<supplied reason="subaudible">year</supplied>` of Nantippōttaracar|Fiftieth [year] of Nantippōttaracar|
 ||`@enjamb`||
-|substitution|`bottun<subst><del rend="corrected">u</del><add place="overstrike">a</add></subst>`|bottun{{u}}⟨⟨a⟩⟩|
+|substitution|`bottun<subst><del rend="corrected">u</del><add place="overstrike">a</add></subst>`|`bottun{{u}}⟨⟨a⟩⟩`|
