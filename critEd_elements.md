@@ -36,7 +36,7 @@ An official full length release is to be published soon.
 |gap|||Indicates a point where material has been omitted in a transcription because it is physically missing for whatever reason.Can contained `<certainty/>`.||
 |gloss|||Identifies a phrase or word used to provide a translation within an inscription. Must be used in correlation with `<term>`.||
 |handDesc|-@hands|Mandatory|Description of hands. Contains a description of all the different hands used in a manuscript. The description may be encoded as one or more paragraphs, `<p>`, but more commonly, the various paragraphs are structured as a series of `<handNote>` elements, each containing a prose description of the hands.|§2.1.3; §2.1.3.1|
-|handNote|-@xml:id(Mandatory) -@scriptRef(Mandatory)|||Note on a hand. Contains a prose description of one of the hands, containing one or more paragraphs, `<p>`.|§2.1.3; §2.1.3.1|
+|handNote|-@xml:id(Mandatory) -@scriptRef(Mandatory)||Note on a hand. Contains a prose description of one of the hands, containing one or more paragraphs, `<p>`.|§2.1.3; §2.1.3.1|
 |head|||Heading. Contains headings on all levels of the document. Allows you to give another editorial title to the part of the inscription. Overstep the attributes given in the preceding `<div>` element. This element can contained only `<foreign>` as child.||
 |hi|-@rend (Values: superscript, subscript)||Distinguishes graphical features when there is not pre-existing element.|§2.1.3|
 |history||Recommended||§2.1.3|
