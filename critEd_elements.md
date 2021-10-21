@@ -4,7 +4,6 @@ An official full length release is to be published soon.
 
 |Elements name|Attributes|Status|Description|Reference|
 |:-----:|:-----:|:-----:|:-----:|:-----:|
-||||||
 |ab|-@xml:lang -@xml:id -type(values: invocation, colophon, speaker) -@prev -@next -@rend(Value: check)||Anonymous Block. Contains any arbitrary component-level unit of text, acting as an anonymous container for phrase or inter level elements analogous to, but without the semantic baggage of a paragraph.|§3.2; §3.3.2; §3.3.2.1, §3.3.2.2; §3.5.3; §4.8.1; §6.2.2; §7.3.1|
 |abbr|-@type (Values: siglum, hand) -@rend(Value: check)|Recommended|Abbreviation. Contains an abbreviation of any sort. In the context of the critical edition, it is used to provide the expected rendering display of any witnesses sigla.|§2.1.3; §7.2.3; §8.6.5; §9.3.2.3|
 |add|-@place(Values:inline, below, above, top, bottom, left, right, overstrike, unspecified -mandatory) -@hand -@rend(Values: mark, check)||Addition. Contains premodern correction and insertion in the source text made by an author, scribe, or a previous annotator or corrector. Can work as twin with `<del>` by being wrapped in `<subst>`.|§5.5.12.1|
@@ -13,10 +12,10 @@ An official full length release is to be published soon.
 |author|||Identify an author.|§2.1.3|
 |authority||Mandatory|Release Authority. Supplies the name of a person or other agency responsible for making a work available, other than a publisher or distributor. By default, contain "DHARMA".|§2.1.2|
 |availability||Mandatory|A description of the conditions for the distribution and use of the text. Contains `<licence>`.|§2.1.2|
-|back||||§3.1; §10; §10.2|
+|back|||Comes after the edited text, mostly for appendices|§3.1; §10; §10.2|
 |bibl|-@n(Value: siglum) -@corresp -@xml:id -@rend(values: omitname, ibid) -@n||Bibliographic citation. Used for each bibliographic reference. Contains `<ptr>` and possibly `<citedRange>`.|§2.1.3; §7.2.3; §8.3.1; §8.4.1; §9.3.2.2; §9.3.2.3|
-|biblFull||Mandatory for translation(s), commentary, bibliography||§9.1.1; §9.2.1; §9.3.1|
-|biblStruct||Mndatory if you reproduce an already published translation||§9.1.1; §9.2.1; §9.3.1|
+|biblFull||Mandatory for translation(s), commentary, bibliography|Fully-structured bibliographic citation, used to declare a previous project or linked external files to the main one.|§9.1.1; §9.2.1; §9.3.1|
+|biblStruct||Mandatory if you reproduce an already published translation|Structured bibliographic citation|§9.1.1; §9.2.1; §9.3.1|
 |body||Mandatory|The main body of the text. This element is required in any TEI conformant document.|§3.1; §9.1.2.1; §9.2.2.1; §9.3.2.1|
 |certainty|-@match(Xpath) -@locus(Values: value or name)||Indicates the degree of certainty associated with some aspect of the text markup. If a text in damaged and you cannot identify the metre with absolute certainty. To be used as child of `<gap reason="lost">` or of first child of `<lg>`|§8.7.2|
 |change|-@status -@when -@who|Mandatory|Records a change or set of changes made during the production of a source document, or during the revision of an electronic file.|§2.2.3; §9.1.1; §9.2.1; §9.3.1|
@@ -36,7 +35,7 @@ An official full length release is to be published soon.
 |filiation|||Provides information on the relationship between the manuscript and other surviving manuscripts of the same text, either specifically or in a general way.|§2.1.3|
 |foreign|-@xml:lang -@rend(Value: check)||Identifies a word or phrase as belonging to some language other than that of the surrounding text. Note that in the context of the DHARMA, this element is used to encode any element identified as foreign, even under the level of the word and that should be italicized in the render of the edition.|§8.9.2; §9.1.4|
 |forename|||The first name of a person, contained in the `<persName>` element. Used with `<surname>`.||
-|front||||§3.1; §10; §10.1|
+|front|||Contains any prefatory matter (headers, abstracts, title page, prefaces, dedications, etc.) found before the body|§3.1; §10; §10.1|
 |g|-@type(Values: numeral, filler, symbol) -@subtype||Glyph or Gaiji. Represents a non-standard character. This element indicates that no equivalent is available in DHARMA transliteration system.|§8.6.1.2|
 |gap|-@reason(Values: omitted, lost, illegible, ellipsis) -@quantity -@unit(Values: character, component) -@precision(Value: low) -@extent(Value: unknown) -@rend(Value: check)||Indicates a point where material has been omitted in a transcription because it is physically missing for whatever reason.Can contained `<certainty/>`.|§5.1.3; §5.1.5; §5.5.4; §5.5.6; §5.5.7; §5.5.8; §5.5.9; §5.5.9.1; §5.5.11; §5.5.11.1; §5.5.12.2; §8.7.1; §9.1.4.2|
 |gloss|-@rend(Value: check)-@rend(Value: check)||Identifies a phrase or word used to provide a translation within an inscription. Must be used in correlation with `<term>`.|§4.9|
@@ -44,9 +43,9 @@ An official full length release is to be published soon.
 |handNote|-@xml:id(Mandatory) -@scriptRef(Mandatory)||Note on a hand. Contains a prose description of one of the hands, containing one or more paragraphs, `<p>`.|§2.1.3; §2.1.3.1|
 |head|-@xml:lang -@type(value:editorial - mandatory if editorial header) -@rend(Value: check)||Heading. Contains headings on all levels of the document. Allows you to give an editorial title to a part of your edition. This element can contained only `<foreign>` as child.|§3.2.1; §9.1.2.2; §9.2.2.2|
 |hi|-@rend (Values: superscript, subscript, italic, bold, check) -@xml:lang||Distinguishes graphical features when there is not pre-existing element.|§2.1.3; §8.8.1; §9.1.4|
-|history||Recommended||§2.1.3|
+|history||Recommended|Describes the history of a manuscript|§2.1.3|
 |idno|-@type(Mandatory in teiHeader with value filename)|Mandatory|Identifier.|§2.1.2; §2.1.3; §9.1.1; §9.2.1; §9.3.1|
-|institution||||§2.1.3|
+|institution|||Identifies an institution|§2.1.3|
 |interpretation|||Describe any additions you are making to the text edition that relate to issues of analysis or interpretation|§2.2.1.1|
 |item|-@rend(Value: check)||Element as a container for each list item.|§8.8.2|
 |join|||Element used to recreate a fragmented text|§4.8.1; §4.8.2|
@@ -68,26 +67,25 @@ An official full length release is to be published soon.
 |listWit||Mandatory|container for all the witnesses that you will be referring to in the critical apparatus|§2.1.3; §5.2.1; §5.4|
 |locus|-@type(Value: displacement) -@from -@to||Indicates locations inside manuscripts|§2.1.3; §5.8.1|
 |measure|-@type (Values: volume, weight, currency...) -@quantity -@unit -@commodity -@rend(Value: check)||Encodes quantity references.|§8.6.3|
-|milestone|||An empty element which marks any break in the transcription.||
 |msContents||Recommend|Describes the intellectual content of any manuscript or part of it|§2.1.3|
 |msDesc||Recommended|Manuscript description. Contains a description of a single identifiable manuscript. Within this element six sub-elements are available: `<msIdentifier>`, `<msContents>`, `<physDesc>`, `<history>`, `<additional>` and `<msPart>`.|§2.1.3|
 |msFrag|||To declare if your text is transmitted in a fragmented manuscript|§2.1.3|
 |msIdentifier||Mandatory|Manuscript identifier.|§2.1.3|
-|msItem|-@n|||§2.1.3|
-|msName|-@xml:lang|||§2.1.3|
+|msItem|-@n||Describes an individual work or item within the intellectual content of a manuscript|§2.1.3|
+|msName|-@xml:lang||Unstructured alternative name used for a manuscript|§2.1.3|
 |msPart|||Declares that your witness belongs to a manuscript composed of parts that were originally separated and that have been bound together at a later stage|§2.1.3|
-|name|||Contains a name, i.e. a proper noun or a noun phrase.||
+|name|||Contains a name, i.e. a proper noun or a noun phrase.|§2.1.1.2|
 |note|-@type(Values: altLem) -@copyOf -@corresp -@sameAs -@resp -@source -@resp -@rend(Value: check)||Contains comments to the text by the editor. It can be in a freeform text pertaining to a particular lemma.|§5.1.1; §5.1.2; §5.1.5; §5.3.1.1; §5.3.1.2; §6.2.1; §6.2.2; §6.2.3; §6.2.3.1; §6.2.3.2; §7.2.3; §7.4; §8.2.1; §8.5; §9.1.4; §9.1.4.4|
-|noteStmt||||§9.1.1; §9.2.1; §9.3.1|
+|notesStmt|||Gathers any notes or remarks providing information about additions to that recorded in other parts of the bibliographic description|§9.1.1; §9.2.1; §9.3.1|
 |normalization|||Explain the extent of normalization and regularization applied on the text as critically edited|§2.2.1.1; §6.1|
 |num|-@value -@cert(Value:low) -@rend(Value: check)||Numeral. Contains a numeral, including any delimiters. It does not replace the <g> element.|§8.6.1.2; §8.6.4; §8.7.1|
-|objectDesc||||§2.1.3|
+|objectDesc|||Description of the physical components of your manuscript|§2.1.3|
 |origDate|@when||Date of creation of your manuscript|§2.1.3|
 |origPlace|||Place of creation of your manuscript|§2.1.3|
 |p|-@xml:id -@next -@prev -@part(Values: I, M, F) -@rend(Value: check, stanza) -@n -@corresp -@cource -@reps||Paragraph. Marks paragraphs in prose of at least one complete sentence or the equivalent of a semantic paragraph.|§2.1.2; §2.1.3; §3.2; §3.3.1; §3.6; §3.7; §4.5; §4.7; §4.8.1; §6.2.2; §8.2.1; §9.1.2.2; §9.1.3.1; §9.1.3.2; §9.2.2.3; ; §9.2.2.4|
 |pb|-@n -@break(Value: no) -@source -@wit -@edRef||Page beginning. An empty element which marks the beginning of a new page in a paginated document. It is also used in foliated documents (having numbers like ‘1r’, ‘1v’, ‘2r’, ‘2v’, and so on.)|§5.5.1; §8.1; §8.1.1; §8.1.2|
 |persName|-@ref(mandatory in the teiHeader) -@type(Values: divine, human, personification) -@subtype(Values: coronation, sobriquet, title, other) -@key -@rend(Value: check)||Personal name. Contains a proper noun or a proper noun phrase referring to a person, consisting of one or more words. For Occidental names, use `<forename>` and `<surname>` structures and for others `<name>`.|§2.1.1.2; §3.5.3; §7.2.1; §8.6.2.1|
-|physDesc||Mandatory||§2.1.3|
+|physDesc||Mandatory|Physical description of a manuscript|§2.1.3|
 |placeName|-@type(Values: district, site, sitePart) -@subtype (Values: temple, shrine, monastery, feedingHall, tank, pavillion, garden) -@ref -@key||A name of a specific location.|§8.6.2.3|
 |prefixDef|-@ident(mandatory) -@matchPattern(mandatory) -@replacementPattern(mandatory)|Mandatory|Path toward some data to complete the edition|§2.2|
 |projectDesc||Recommended|Use to state your project|§2.2; §2.2.1; §9.1.1; §9.2.1; §9.3.1|
@@ -110,7 +108,7 @@ An official full length release is to be published soon.
 |schemaRef|-@type -@key @url(mandatory)|Mandatory|Point to any external customization file of the TEI.|§2.2; §2.2.1.3|
 |secl|-@rend(Value: check)||Secluded. Genuine interpolation for which you can't determine a position in the text|§5.6.4|
 |seg|-@type(Value: highlight, interpolation) -@met -@cert(Value:low) -@rend(Value: check, pun)||Segment. Groups one or more strings of text, e.g. words.|§5.5.2; §5.5.9.1; §5.6.2; §8.7.1; §9.1.4.3; §9.1.4.4|
-|settlement||||§2.1.3|
+|settlement|||Name of a settlement such as a city, town, or village identified as an administrative unit|§2.1.3|
 |sic|-@rend(Value: check)||Contains a passage reproduced as is although apparently incorrect or inaccurate. By EpiDoc convention, this markup is used for text that is legible but does not seem intelligible.|§5.9; §9.1.4.3|
 |sourceDesc||Mandatory|Source description. Mandatory part of the header and describes the source material. Sub-element of `<fileDesc>`. Record details about the original manuscripts and printed texts used as witnesses in establishing your critical edition|§2.1.3; §9.1.1; §9.2.1; §9.3.1|
 |sp|-@rend(Value: check)||Individual speech in a dramatic text|§3.5.1|
@@ -121,15 +119,15 @@ An official full length release is to be published soon.
 |subst|||Substitution. Wraps the combination of deletion and addition.|§5.5.12.3|
 |summary|-@xml:lang||Provides a summary of the edition|§2.1.3|
 |supplied|-@reason (mandatory - values: implied, omitted, lost, undefined, subaudible, explanation) -@evidence(Values: internal, external, conjectural) -@cert(Value:low) -@rend(Value: check)||Signifies text supplied by the transcriber, encoder or editor either in place of text which is missing or to clarify a reading.|§4.2; §4.3; §5.7; §5.7.1; §8.7.1; §9.1.4.1; §9.1.4.2|
-|supportDesc||||§2.1.3|
-|surname|||Contains a family (inherited) name of a person, excluding patronyms and metronyms.||
+|supportDesc|||Description of the materials etc. which make up the physical support for the written part of a manuscript|§2.1.3|
+|surname|||Contains a family (inherited) name of a person, excluding patronyms and metronyms.|§2.1.1.2|
 |surplus|-@rend(Value: check)||Characters were erroneously added by the scribe, and you correct the text by suppressing the superfluous segment.|§5.6.3|
 |TEI|-@corresp (mandatory for external files) -@type (values: bibliography, commentary, edition and translation- Mandatory) -@xml:id (mandatory on the main file) -xml:lang (by default eng) ||The element `<TEI>` must wrap all TEI-compliant content as a root tag. The `<TEI>` element must contain two sub-elements, `<teiHeader>` and `<text>`.|§1; §7.3; §8.9.1; §9.1.2.1; §9.2.2.1; §9.3.2.1|
 |teiHeader||Mandatory|The TEI-based header contains additional descriptive information (metadata) about the digital document and is a mandatory component of every TEI document.|§2; §9.1.1; §9.2.1; §9.3.1|
 |term|-@xml:lang -@xml:id -@rend(Value: check)||Contains a single-word, multi-word, or symbolic designation which is regarded as a technical term. Use it to wrap a foreign element followed by its translation into a local language that can be encoded as `<gloss>`.|§2.2.2; §4.9; §7.3.2|
 |text|-@xml:space(Default value must be ‘preserve’) -@xml:lang|Mandatory|Contains a single text of any kind.|§3.1; §7.3; §8.9.1; §9.1.2.1; §9.2.2.1; §9.3.2.1|
 |textClass|||Contain the element `<keywords>`.|§2.2.2|
-|textLang|-@mainLang (Recommended)|||§2.1.3|
+|textLang|-@mainLang (Recommended)||Describes the languages and writing systems identified in the manuscript|§2.1.3|
 |title|-@type (Values: main, sub) -@subype (Values: editorial, base-text, commentary, translation) -@xml:lang (only if the title isn't in English) -@n (Only if more than one title bear the same @subtype) -@level(Values: a) -@rend(Values: plain, check)|Mandatory in the `<teiHeader>`|Contains a title for any kind of work.|§2.1.1.1; §2.1.3; §7.2.3; §8.4.2; §9.1.1; §9.2.1; §9.3.1|
 |titleStmt||Mandatory|Title statement. Contains information on the title, editor and other people who have been involved in the edition.|§2.1.1; §9.1.1; §9.2.1; §9.3.1|
 |unclear|-@reason (Values: eccentric_ductus) -@cert(Values: low) -@rend(Value: check)||Stands in EpiDoc for any character “of which at least traces survive, but not adequately to identify the letter unambiguously outside of its context”.|§2.1.1; §5.5.6; §8.7.1|
