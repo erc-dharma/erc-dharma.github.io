@@ -1,6 +1,6 @@
 # DHARMA List of Elements for Critical Editions
 
-An official full length release is to be published soon.
+An official full length release is to be published soon, you can find the candidate release [here](https://docs.google.com/document/d/15HFxHJTOzIU1UDyVrB2yQYJ5wI6JyEshEkYgg5qwj8M/edit?usp=sharing)
 
 |Elements name|Attributes|Status|Description|Reference|
 |:-----:|:-----:|:-----:|:-----:|:-----:|
