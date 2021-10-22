@@ -21,7 +21,7 @@ An official full length release is to be published soon, you can find the candid
 |change|-@status -@when -@who|Mandatory|Records a change or set of changes made during the production of a source document, or during the revision of an electronic file.|§2.2.3; §9.1.1; §9.2.1; §9.3.1|
 |choice|-@rend(value: check)||Used to declare any encoding alternative with unclear and abbreviations.|§5.5.6; §8.6.5|
 |cit|||Citation. Encodes a direct quotation from a published source.|§8.3.1|
-|citedRange|-@unit(values: page, part, volume, note, item, entry, line, figure, plate, table, appendix, section, book)||To refer to page numbers.|§2.1.3; §8.4.1|
+|citedRange|-@unit(values: page, part, volume, note, item, entry, line, figure, plate, table, appendix, section, book, stanza)||To refer to page numbers.|§2.1.3; §8.4.1|
 |colophon|-@xml:lang (mandatory)||Record scribal statements not shared between your different witnesses.|§2.1.3|
 |correction|||Give specifications regarding the correction principles within your edition|§2.2.1.1|
 |date|-@from -@to|Mandatory|Contains a date in any format.|§2.1.2|
