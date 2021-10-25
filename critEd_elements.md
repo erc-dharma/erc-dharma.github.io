@@ -48,16 +48,16 @@ An official full length release is to be published soon, you can find the candid
 |institution|||Identifies an institution|§2.1.3|
 |interpretation|||Describe any additions you are making to the text edition that relate to issues of analysis or interpretation|§2.2.1.1|
 |item|-@rend(value: check)||Element as a container for each list item.|§8.8.2|
-|join|||Element used to recreate a fragmented text|§4.8.1; §4.8.2|
+|join|-@result -@scope -@target||Element used to recreate a fragmented text|§4.8.1; §4.8.2|
 |keywords||Recommended|List containing keywords.|§2.2.2|
 |l|-@n (mandatory) -@real -@enjamb(value: yes) -@corresp -@rend(value: check)|Mandatory in `<lg>`|Individual verse line.|§3.2; §3.4.3; §3.4.4; §3.4.5; §3.7; §4.5; §5.8.3; §6.2.2|
 |label|-@rend(value: check)||Heading used to identify changes of interlocutor in a dialogue context|§3.5.3; §8.8.2|
-|language|-@ident(mandatory)|Mandatory|Declare a language used in the file.|§2.2.2|
 |lacunaEnd|||Marks the end of a lacuna|§5.5.10.2|
 |lacunaStart|||Marks the start of a lacuna|§5.5.10.2|
+|language|-@ident(mandatory)|Mandatory|Declare a language used in the file.|§2.2.2|
 |langUsage||Mandatory|Record the languages used in the file.|§2.2.2|
-|lem|-@wit -@type(values: emn, conj, norm, absent_elsewhere, reformulated_elsewhere) -@rend(values: hyphenfront, hyphenback, hyphenaround,circlefront, circleback, circlearound) -@hand -xml:id -@varSeq(values: 1 ou 2) -@resp -@rend(value: check)||Lemma. Contains a lemma for an apparatus entry. First child of the element `<app>`.|§5.1.1; §5.1.2; §5.1.5; §5.3; §5.3.1.1; §5.3.1.2; §5.3.1.3; §5.3.2; §5.3.3; §5.4; §5.5.4; §5.5.5; §5.5.5.1; §5.5.10.1; §6.2.4.1; §6.3; §7.3.2; §8.5|
 |lb|-@n -@break(value: no) -@source||Line beginning. An empty element which marks the beginning of a new line.|§5.5.1; §8.1; §8.1.1|
+|lem|-@wit -@type(values: emn, conj, norm, absent_elsewhere, reformulated_elsewhere) -@rend(values: hyphenfront, hyphenback, hyphenaround,circlefront, circleback, circlearound, check) -@hand -xml:id -@varSeq(values: 1 ou 2) -@resp ||Lemma. Contains a lemma for an apparatus entry. First child of the element `<app>`.|§5.1.1; §5.1.2; §5.1.5; §5.3; §5.3.1.1; §5.3.1.2; §5.3.1.3; §5.3.2; §5.3.3; §5.4; §5.5.4; §5.5.5; §5.5.5.1; §5.5.10.1; §6.2.4.1; §6.3; §7.3.2; §8.5|
 |lg|-@met(mandatory/ might be changing) -@n(mandatory for edited text, not for supplied text) -@xml:id -@xml:lang -@part(values: I, M, F) -@prev -@next -@rend(value: check)||Line group. Marks the stanza as a whole.|§3.2; §3.2.1; §3.6; §3.7; §4.5; §4.8.2; §6.2.2|
 |licence| -@target(Mandatory)|Mandatory|Licence set by default to a Creative Commons licence identifying the author|§2.1.2; §3.4; §3.4.1|
 |list|-@rend(values: bulleted, numbered, check)||Contains any sequence of items organized as a list.|§8.8.2|
@@ -75,27 +75,27 @@ An official full length release is to be published soon, you can find the candid
 |msName|-@xml:lang||Unstructured alternative name used for a manuscript|§2.1.3|
 |msPart|||Declares that your witness belongs to a manuscript composed of parts that were originally separated and that have been bound together at a later stage|§2.1.3|
 |name|||Contains a name, i.e. a proper noun or a noun phrase.|§2.1.1.2|
-|note|-@type(values: altLem, prosody) -@copyOf -@corresp -@sameAs -@resp -@source -@resp -@rend(value: check)||Contains comments to the text by the editor. It can be in a freeform text pertaining to a particular lemma.|§5.1.1; §5.1.2; §5.1.5; §5.3.1.1; §5.3.1.2; §6.2.1; §6.2.2; §6.2.3; §6.2.3.1; §6.2.3.2; §7.2.3; §7.4; §8.2.1; §8.5; §9.1.4; §9.1.4.4|
-|notesStmt|||Gathers any notes or remarks providing information about additions to that recorded in other parts of the bibliographic description|§9.1.1; §9.2.1; §9.3.1|
 |normalization|||Explain the extent of normalization and regularization applied on the text as critically edited|§2.2.1.1; §6.1|
+|note|-@type(values: altLem, prosody) -@copyOf -@corresp -@sameAs -@resp -@source -@rend(value: check)||Contains comments to the text by the editor. It can be in a freeform text pertaining to a particular lemma.|§5.1.1; §5.1.2; §5.1.5; §5.3.1.1; §5.3.1.2; §6.2.1; §6.2.2; §6.2.3; §6.2.3.1; §6.2.3.2; §7.2.3; §7.4; §8.2.1; §8.5; §9.1.4; §9.1.4.4|
+|notesStmt|||Gathers any notes or remarks providing information about additions to that recorded in other parts of the bibliographic description|§9.1.1; §9.2.1; §9.3.1|
 |num|-@value -@cert(value:low) -@rend(value: check)||Numeral. Contains a numeral, including any delimiters. It does not replace the <g> element.|§8.6.1.2; §8.6.4; §8.7.1|
 |objectDesc|||Description of the physical components of your manuscript|§2.1.3|
 |origDate|@when||Date of creation of your manuscript|§2.1.3|
 |origPlace|||Place of creation of your manuscript|§2.1.3|
-|p|-@xml:id -@next -@prev -@part(values: I, M, F) -@rend(value: check, stanza) -@n -@corresp -@cource -@reps||Paragraph. Marks paragraphs in prose of at least one complete sentence or the equivalent of a semantic paragraph.|§2.1.2; §2.1.3; §3.2; §3.3.1; §3.6; §3.7; §4.5; §4.7; §4.8.1; §6.2.2; §8.2.1; §9.1.2.2; §9.1.3.1; §9.1.3.2; §9.2.2.3; ; §9.2.2.4|
+|p|-@xml:id -@next -@prev -@part(values: I, M, F) -@rend(value: check, stanza) -@n -@corresp -@cource -@resp||Paragraph. Marks paragraphs in prose of at least one complete sentence or the equivalent of a semantic paragraph.|§2.1.2; §2.1.3; §3.2; §3.3.1; §3.6; §3.7; §4.5; §4.7; §4.8.1; §6.2.2; §8.2.1; §9.1.2.2; §9.1.3.1; §9.1.3.2; §9.2.2.3; ; §9.2.2.4|
 |pb|-@n -@break(value: no) -@source -@wit -@edRef||Page beginning. An empty element which marks the beginning of a new page in a paginated document. It is also used in foliated documents (having numbers like ‘1r’, ‘1v’, ‘2r’, ‘2v’, and so on.)|§5.5.1; §8.1; §8.1.1; §8.1.2|
 |persName|-@ref(mandatory in the teiHeader) -@type(values: divine, human, personification) -@subtype(values: coronation, sobriquet, title, other) -@key -@rend(value: check)||Personal name. Contains a proper noun or a proper noun phrase referring to a person, consisting of one or more words. For Occidental names, use `<forename>` and `<surname>` structures and for others `<name>`.|§2.1.1.2; §3.5.3; §7.2.1; §8.6.2.1|
 |physDesc||Mandatory|Physical description of a manuscript|§2.1.3|
 |placeName|-@type(values: district, site, sitePart) -@subtype (values: temple, shrine, monastery, feedingHall, tank, pavillion, garden) -@ref -@key||A name of a specific location.|§8.6.2.3|
 |prefixDef|-@ident(mandatory) -@matchPattern(mandatory) -@replacementPattern(mandatory)|Mandatory|Path toward some data to complete the edition|§2.2|
-|projectDesc||Recommended|Use to state your project|§2.2; §2.2.1; §9.1.1; §9.2.1; §9.3.1|
 |profilDesc|||Provide metadata related to non-bibliographic aspects of the text|§2.2.2|
+|projectDesc||Recommended|Use to state your project|§2.2; §2.2.1; §9.1.1; §9.2.1; §9.3.1|
 |ptr|-@target -@rend(values:title, siglum)||Pointer for bibliographical data and citing witnesses, sigla and hands|§2.1.3; §2.1.4; §7.2.3; §7.2.3.1; §7.4; §7.4.2.2; §8.4.1; §9.3.2.2|
 |publicationStmt||Mandatory|Publication statement. Groups information concerning the publication or distribution of an electronic or other text.|§2.1.2; §9.1.1; §9.2.1; §9.3.1|
 |pubPlace||Mandatory|Publication place for legal matters stating the edition.|§2.1.2; §9.1.1; §9.2.1; §9.3.1|
 |punctuation|||Explain the degree of correspondence between punctuation of your constituted text and the punctuation found in the witnesses|§2.2.1.1|
 |q|-@rend(value: check)||Quoted text not attributed to a publish source.|§8.3.2|
-|quote|-@xml:lang -@rend(value: block) -@type(value base-text) -@rend(value: check)||Quotation. Contains a quotation from another source or a base text segment|§3.7; §4.1; §4.2; §4.3; §4.4; §4.5; §4.6; §8.3; §8.3.1|
+|quote|-@xml:lang -@rend(values: block, check) -@type(value: base-text))||Quotation. Contains a quotation from another source or a base text segment|§3.7; §4.1; §4.2; §4.3; §4.4; §4.5; §4.6; §8.3; §8.3.1|
 |rdg|-@wit -@cause(values:eye-skip, line_omission, haplography, dittography, lexical, morphological, ordinal, syntatic, subtrative, additive) -@hand -@varSeq(values: 1 ou 2) -@sameAs -@type(values: paradosis, transposition) -@resp -@rend(value: check)||Reading. Contains an alternative reading. Must be wrapped inside the element `<app>` and follow a `<lem>`.|§5.1.1; §5.1.2; §5.1.5; §5.4; §5.5.3; §5.5.4; §5.5.5.2; §5.5.8; §5.5.11.2; §5.8.2; §5.8.3; §6.3; §8.5|
 |ref|@target -@cRef -@rend(value: check)||Reference. Defines a reference to another inscription in the DHARMABase.|§2.2; §7.4; §7.4.1; §7.4.2; §8.3.1|
 |repository||Mandatory|Contains the name of a repository which stored the inscription.|§2.1.3|
@@ -107,7 +107,7 @@ An official full length release is to be published soon, you can find the candid
 |samplingDesc|||Record free-text information about inclusion or omission of portions of the text, manuscripts, or witnesses|§2.2.1.2|
 |schemaRef|-@type -@key @url(mandatory)|Mandatory|Point to any external customization file of the TEI.|§2.2; §2.2.1.3|
 |secl|-@rend(value: check)||Secluded. Genuine interpolation for which you can't determine a position in the text|§5.6.4|
-|seg|-@type(value: highlight, interpolation) -@met -@cert(value:low) -@rend(value: check, pun)||Segment. Groups one or more strings of text, e.g. words.|§5.5.2; §5.5.9.1; §5.6.2; §8.7.1; §9.1.4.3; §9.1.4.4|
+|seg|-@type(value: highlight, interpolation) -@met -@cert(value:low) -@rend(values: check, pun)||Segment. Groups one or more strings of text, e.g. words.|§5.5.2; §5.5.9.1; §5.6.2; §8.7.1; §9.1.4.3; §9.1.4.4|
 |settlement|||Name of a settlement such as a city, town, or village identified as an administrative unit|§2.1.3|
 |sic|-@rend(value: check)||Contains a passage reproduced as is although apparently incorrect or inaccurate. By EpiDoc convention, this markup is used for text that is legible but does not seem intelligible.|§5.9; §9.1.4.3|
 |sourceDesc||Mandatory|Source description. Mandatory part of the header and describes the source material. Sub-element of `<fileDesc>`. Record details about the original manuscripts and printed texts used as witnesses in establishing your critical edition|§2.1.3; §9.1.1; §9.2.1; §9.3.1|
