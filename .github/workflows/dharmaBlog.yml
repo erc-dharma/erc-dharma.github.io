@@ -1,7 +1,9 @@
 name: Fetch recent blog posts from DHARMA Hypotheses
+#on:
+#  schedule:
+#    - cron: "* */6 * * *"
 on:
-  schedule:
-    - cron: "* */6 * * *"
+  push
 
 jobs:
   fetch-recent-blog-posts:
