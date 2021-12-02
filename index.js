@@ -2,7 +2,7 @@ import fs from "fs";
 import fetch from "node-fetch";
 import parser from "xml2json";
 
-const FEED_URL = "https://dharma.hypotheses.org/feed.xml";
+const FEED_URL = "https://dharma.hypotheses.org/feed";
 const TAG_OPEN = `<!-- FEED-START -->`;
 const TAG_CLOSE = `<!-- FEED-END -->`;
 
