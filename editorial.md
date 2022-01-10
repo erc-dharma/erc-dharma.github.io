@@ -32,8 +32,8 @@
 |Line lost, precision low|`<gap reason="lost/illegible/undefined" quantity="3" unit="line" precision="low"/>`|[ca. 3 lines lost/illegible/lost or illegible]|
 |Line possibly lost|`<gap reason="lost/illegible/undefined" quantity="1" unit="line"><certainty match=".." locus="name"/></gap>`|[1 line possibly lost/illegible/lost or illegible]|
 ||`<gap reason="lost/illegible/undefined" quantity="2" unit="line" precision="low"><certainty match=".." locus="name"/></gap>`|[ca. 2 lines possibly lost/illegible/lost or illegible]|
-||`<seg met="+++-++"><gap reason="lost" quantity="6" unit="character">`|[–––⏑––]|
-||`<gap reason="illegible" quantity="10" unit="character" precision="low"/><seg met="+++-++"><gap reason="illegible" quantity="6" unit="character"/></seg><supplied reason="lost" evidence="parallel">abc</supplied>`|[ca.10x–––⏑––abc]|
+||`<seg met="+++-++"><gap reason="lost" quantity="6" unit="character">`|[– – – ⏑ – –]|
+||`<gap reason="illegible" quantity="10" unit="character" precision="low"/><seg met="+++-++"><gap reason="illegible" quantity="6" unit="character"/></seg><supplied reason="lost" evidence="parallel">abc</supplied>`|[ca.10x – – – ⏑ – – abc]|
 |Scribal addition|`dha<add>rma</add>`|dha⟨⟨rma⟩⟩|
 |Scribal deletion|`dharma<del>ma</del>`|`dharma⟦ma⟧`|
 |Consonant|`<seg type="component" subtype="body"/>`||
