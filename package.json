@@ -2,7 +2,7 @@
   "name": "erc-dharma",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "git@github.com:erc-dharma/erc-dharma.github.io.git",
+  "repository": "https://github.com/erc-dharma/project-documentation.git",
   "license": "MIT",
   "type": "module",
   "scripts": {
