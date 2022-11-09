@@ -286,7 +286,7 @@ Version 0.2 (July 2019), compiled and edited by Axelle Janiak.
 |&lt;title&gt;||Contains a title for any kind of work.|10.2.1, 10.4.2, 11.1.1|
 |@level|Optional|For titles of chapter and articles. Only value possible: ‘a’||
 |@rend|Optional|To display the title without italics. Only value: ‘plain’.||
-|&lt;titleStmt&gt;||Title statement. Contains information on the title, e|:-----:|:-----:|:-----:|:-----:|ditor and other people who have been responsible for the edition.|1.4, 11.1|
+|&lt;titleStmt&gt;||Title statement. Contains information on the title, editor and other people who have been responsible for the edition.|1.4, 11.1|
 
 ### U
 |Elements and attributes|Attributes Use|Contents|Encoding Guide section|
