@@ -2,10 +2,11 @@
 
 
 An official full length release has been published already [here](https://erc-dharma.github.io/project-documentation/encoding-diplomatic/DHARMA%20EGD%20v1%20release.pdf), but you can find the candidate release [here](https://docs.google.com/document/d/1hjWrrwRZQp4hmEqw4jBhhqoXdwJvRlw3EWboJteOPw0/edit?usp=sharing)
-Version 0.2 (July 2019), compiled and edited by Axelle Janiak.
+Version 2.0.
 
 ## Index of elements and attributes
 ### A
+
 |Elements and attributes|Attributes Use|Contents|Encoding Guide section|
 |:-----:|:-----:|:-----:|:-----:|
 |&lt;ab&gt;||Anonymous Block. Contains any arbitrary component-level unit of text, acting as an anonymous container for phrase or inter level elements analogous to, but without the semantic baggage of a paragraph.|2.2.2, 7.2.1, 7.5.4, 7.5.5|
@@ -22,6 +23,7 @@ Version 0.2 (July 2019), compiled and edited by Axelle Janiak.
 |&lt;availability&gt;||A description of the conditions for the distribution and use of the text.Contains &lt;licence&gt;.|11.1|
 
 ### B
+
 |Elements and attributes|Attributes Use|Contents|Encoding Guide section|
 |:-----:|:-----:|:-----:|:-----:|
 |&lt;bibl&gt;||Bibliographic citation. Used for each bibliographic reference.Contains &lt;ptr&gt; and possibly &lt;citedRange&gt;.|9.4.2, 9.4.3, 10.4.5|
@@ -30,6 +32,7 @@ Version 0.2 (July 2019), compiled and edited by Axelle Janiak.
 |&lt;body&gt;||The main body of the text. This element is required in any TEI conformant document. Contains &lt;div&gt; @type : edition, apparatus, translation, commentary, bibliography.|1.4|
 
 ### C
+
 |Elements and attributes|Attributes Use|Contents|Encoding Guide section|
 |:-----:|:-----:|:-----:|:-----:|
 |&lt;certainty/&gt;||Indicates the degree of certainty associated with some aspect of the text markup. If a text in damaged and you cannot identify the metre with absolute certainty. To be used right after|2.3.4, 5.4.6|
@@ -47,6 +50,7 @@ Version 0.2 (July 2019), compiled and edited by Axelle Janiak.
 |&lt;corr&gt;||Correction. Contains the correct form of a passage apparently incorrect or inaccurate in the inscritption text.Accompanied by the &lt;sic&gt; element wrapped by &lt;choice&gt; as parent.|6.2.2, 6.2.5, 6.2.6|
 
 ### D
+
 |Elements and attributes|Attributes Use|Contents|Encoding Guide section|
 |:-----:|:-----:|:-----:|:-----:|
 |&lt;damage&gt;||Contains an area of damage to the text.|5.2|
@@ -71,6 +75,7 @@ Version 0.2 (July 2019), compiled and edited by Axelle Janiak.
 |@xml:lang|Optional|Gives the language for a part of the text if it changes from ‘textpart’ to ‘textpart’. Use the 3 letters language code define in Appendix D.||
 
 ### F
+
 |Elements and attributes|Attributes Use|Contents|Encoding Guide section|
 |:-----:|:-----:|:-----:|:-----:|
 |&lt;fileDesc&gt;||File Description. Contains information on the title, on the publication and on the source. This element is a mandatory part of the header and is treated in two separate subsections, one dealing with the meta-level information on the file history, &lt;titleStmt&gt;, the other concerning the source from which the XML-file is created &lt;sourceDesc&gt;.|1.4, 11.1, 11.2|
@@ -84,6 +89,7 @@ Version 0.2 (July 2019), compiled and edited by Axelle Janiak.
 |@style|Optional|Records the alignment of the forme work. Value: ‘text-align: right’, ‘text-align: center’, ‘text-align: left’, ‘text-align: justify’. (Closed list)||
 
 ### G
+
 |Elements and attributes|Attributes Use|Contents|Encoding Guide section|
 |:-----:|:-----:|:-----:|:-----:|
 |&lt;g&gt;|3 uses cases|Glyph or Gaiji. Represents a non-standard character. This element indicates that no equivalent is available in DHARMA transliteration system.|4.2.1, 4.2.2, 4.2.3, 4.2.4, 4.2.5, 4.2.6|
@@ -100,6 +106,7 @@ Version 0.2 (July 2019), compiled and edited by Axelle Janiak.
 |@xml:lang|Optional|Use this attribute only if the containing text is in a language other than the primary one. Use the 3 letters language code define in Appendix D.||
 
 ### H
+
 |Elements and attributes|Attributes Use|Contents|Encoding Guide section|
 |:-----:|:-----:|:-----:|:-----:|
 |&lt;handDesc&gt;||Description of hands. Contains a description of all the different hands used in a manuscript. The description may be encoded as one or more paragraphs, &lt;p&gt;, but more commonly, the various paragraphs are structured as a series of &lt;handNote&gt; elements, each containing a prose description of the hands.|4.4, 11.2.1|
@@ -113,6 +120,7 @@ Version 0.2 (July 2019), compiled and edited by Axelle Janiak.
 |@rend|Mandatory|This attribute can take several values. Order then following (1) script and (2) lettering. The directionality is not available for this element.Recommended values for script: ‘grantha’,Recommended values for lettering: ‘ornate’, ‘large’, ‘small’, ‘tall’, ‘wide’ and ‘expanded’. Recommended values for typographic highlighying: ‘italic’, ‘bold’, ‘subscript’ and ‘superscript’.||
 
 ### I
+
 |Elements and attributes|Attributes Use|Contents|Encoding Guide section|
 |:-----:|:-----:|:-----:|:-----:|
 |&lt;idno&gt;||Identifier. Provide the filename without the extension. |1.4, 10.6.4, 11.1.3|
@@ -120,6 +128,7 @@ Version 0.2 (July 2019), compiled and edited by Axelle Janiak.
 |&lt;item&gt;||Element as a container for each list item.|10.2.2|
 
 ### L
+
 |Elements and attributes|Attributes Use|Contents|Encoding Guide section|
 |:-----:|:-----:|:-----:|:-----:|
 |&lt;l&gt;||Verse line.|2.3.2, 2.3.3, 2.3.4, 2.3.5, 2.3.6, 5.4.7, 7.5.1, 7.5.3, 7.5.4, 7.5.5|
@@ -152,6 +161,7 @@ Version 0.2 (July 2019), compiled and edited by Axelle Janiak.
 |&lt;listPrefixDef&gt;||||
 
 ### M
+
 |Elements and attributes|Attributes Use|Contents|Encoding Guide section|
 |:-----:|:-----:|:-----:|:-----:|
 |&lt;measure&gt;||Encodes quantity references.|7.4.4|
@@ -169,6 +179,7 @@ Version 0.2 (July 2019), compiled and edited by Axelle Janiak.
 |&lt;msIdentifier&gt;||Manuscript identifier.||
 
 ### N
+
 |Elements and attributes|Attributes Use|Contents|Encoding Guide section|
 |:-----:|:-----:|:-----:|:-----:|
 |&lt;name&gt;||Contains a name, i.e. a proper noun or a noun phrase.|10.5.1|
@@ -184,11 +195,13 @@ Version 0.2 (July 2019), compiled and edited by Axelle Janiak.
 |@value|Mandatory, but can be replaced by @atLeast and @atMost|Specifies the numeral in numbers in machine-readable format, i.e. ‘1’, ‘2’, ‘3’, and so on.Fractions shall be recorded as decimal with a round value to three digits after the decimal.||
 
 ### O
+
 |Elements and attributes|Attributes Use|Contents|Encoding Guide section|
 |:-----:|:-----:|:-----:|:-----:|
 |&lt;orig&gt;||Original form. Contains a passage in its original form in a non-standard usage. &lt;reg&gt; can be used for normalisation by substitution. |6.3.1, 6.3.2, 6.3.4|
 
 ### P
+
 |Elements and attributes|Attributes Use|Contents|Encoding Guide section|
 |:-----:|:-----:|:-----:|:-----:|
 |&lt;p&gt;||Paragraph. Marks paragraphs in prose of at least one complete sentence or the equivalent of a semantic paragraph.|2.2.1, 3.2, 5.4.7, 7.2.1, 7.5.1, 7.5.4, 7.5.5, 9.2.6, 9.3.2, 9.4.4, 10.3.2|
@@ -222,6 +235,7 @@ Version 0.2 (July 2019), compiled and edited by Axelle Janiak.
 |&lt;pubPlace&gt;||Publication place for legal matters stating the edition. |11.1.3|
 
 ### Q
+
 |Elements and attributes|Attributes Use|Contents|Encoding Guide section|
 |:-----:|:-----:|:-----:|:-----:|
 |&lt;q&gt;||Quoted text not attributed to a publish source.|10.4.3|
@@ -230,6 +244,7 @@ Version 0.2 (July 2019), compiled and edited by Axelle Janiak.
 |@rend|Mandatory|To create a block quote. Sample value: ‘block’.||
 
 ### R
+
 |Elements and attributes|Attributes Use|Contents|Encoding Guide section|
 |:-----:|:-----:|:-----:|:-----:|
 |&lt;rdg&gt;||Reading. Contains an alternative reading. Must be wrapped inside the element &lt;app&gt; and follow a &lt;lem&gt;.|9.1.1, 9.1.4, 9.1.5|
@@ -251,6 +266,7 @@ Version 0.2 (July 2019), compiled and edited by Axelle Janiak.
 |&lt;rs&gt;||||
 
 ### S
+
 |Elements and attributes|Attributes Use|Contents|Encoding Guide section|
 |:-----:|:-----:|:-----:|:-----:|
 |&lt;seg&gt;||Segment. Groups one or more strings of text, e.g. words.|4.1.1, 4.1.2, 5.4.4, 5.4.5, 9.2.10, 9.2.14|
@@ -275,6 +291,7 @@ Version 0.2 (July 2019), compiled and edited by Axelle Janiak.
 |&lt;surplus&gt;||Characters were erroneously added by the scribe, and you correct the text by suppressing the superfluous segment.|6.2.3, 6.2.5|
 
 ### T
+
 |Elements and attributes|Attributes Use|Contents|Encoding Guide section|
 |:-----:|:-----:|:-----:|:-----:|
 |&lt;TEI&gt;||The element &lt;TEI&gt; must wrap all TEI-compliant content as a root tag.The &lt;TEI&gt; element must contain two sub-elements, &lt;teiHeader&gt; and &lt;text&gt;.|1.4, 10.3.2|
@@ -289,6 +306,7 @@ Version 0.2 (July 2019), compiled and edited by Axelle Janiak.
 |&lt;titleStmt&gt;||Title statement. Contains information on the title, editor and other people who have been responsible for the edition.|1.4, 11.1|
 
 ### U
+
 |Elements and attributes|Attributes Use|Contents|Encoding Guide section|
 |:-----:|:-----:|:-----:|:-----:|
 |&lt;unclear&gt;||Stands in EpiDoc for any character “of which at least traces survive, but not adequately to identify the letter unambiguously outside of its context”.&lt;g&gt; is the only element allowed as child of &lt;unclear&gt;|5.1, 5.3.1, 5.3.2, 5.3.3|
