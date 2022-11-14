@@ -8,7 +8,7 @@ An official full length release is to be published soon, you can find the candid
 |abbr|-@type (values: siglum, hand) -@rend(value: check)|Recommended|Abbreviation. Contains an abbreviation of any sort. In the context of the critical edition, it is used to provide the expected rendering display of any witnesses sigla.|§2.1.3; §7.2.3; §8.6.5; §9.3.2.3|
 |add|-@place(values:inline, below, above, top, bottom, left, right, overstrike, unspecified -mandatory) -@hand -@rend(values: mark, check)||Addition. Contains premodern correction and insertion in the source text made by an author, scribe, or a previous annotator or corrector. Can work as twin with `<del>` by being wrapped in `<subst>`.|§5.5.12.1|
 |anchor|-@xml:id||Allows to provide a anchoring point in the edited text|§6.2.4.2|
-|app|-@xml:id -@prev -@next -@type(values: imitation, adaptation) -@from -@to -@loc -@rend(value: check)||Apparatus. Contains one entry in a critical apparatus, with a lemma `<lem>`  and usually one or more readings `<rdg>` or notes `<note>` on the relevant passage. Each apparatus entry must be individually wrapped in the element `<app>` .|§5.1.1; §5.1.2; §5.1.5; §5.2.4; §5.3; §5.4; §6.2.1; §6.2.4.2; §6.3; §7.3.2; §8.2.1|
+|app|-@xml:id -@prev -@next -@type(values: imitation, adaptation) -@from -@to -@loc -@rend(value: check, hide)||Apparatus. Contains one entry in a critical apparatus, with a lemma `<lem>`  and usually one or more readings `<rdg>` or notes `<note>` on the relevant passage. Each apparatus entry must be individually wrapped in the element `<app>` .|§5.1.1; §5.1.2; §5.1.5; §5.2.4; §5.3; §5.4; §6.2.1; §6.2.4.2; §6.3; §7.3.2; §8.2.1|
 |author|||Identify an author.|§2.1.3|
 |authority||Mandatory|Release Authority. Supplies the name of a person or other agency responsible for making a work available, other than a publisher or distributor. By default, contain "DHARMA".|§2.1.2|
 |availability||Mandatory|A description of the conditions for the distribution and use of the text. Contains `<licence>`.|§2.1.2|
@@ -24,10 +24,12 @@ An official full length release is to be published soon, you can find the candid
 |citedRange|-@unit(values: page, part, volume, note, item, entry, line, figure, plate, table, appendix, section, book, stanza)||To refer to page numbers.|§2.1.3; §8.4.1|
 |collection|||Declares a collection for a manuscript|Rsisasana|
 |colophon|-@xml:lang (mandatory)||Record scribal statements not shared between your different witnesses.|§2.1.3|
+|corr|||Correction. Can only be used with `<choice>` for colophons.|§2.1.3.4|
 |correction|||Give specifications regarding the correction principles within your edition|§2.2.1.1|
-|date|-@from -@to|Mandatory|Contains a date in any format.|§2.1.2|
+|date|-@from -@to -@when -@notAfter  -@notBefore -@calendar -@datingMethod -@type(value:origDate) -@from-custom -@to-custom -@when-custom -@notAfter-custom  -@notBefore-custom|Mandatory|Contains a date in any format.|§2.1.2, §8.6.3|
 |del|-@rend (values: strikeout, dots, ui, check)||Purposeful deletion. Text deleted by scribe.|§5.5.12.2|
-|div|-@type(values:chapter, canto, dyad, section, group, interpolation) - @n(Recommended) -@met -@real -@xml:id -@rend(value: check) -@corresp -@resp -@source|Mandatory|Text division. Contains a subdivision of the text.|§3.2; §3.4.2; §4.4; §4.6; §4.7; §4.8; §4.8.1; §5.6.1; §9.1.2.2; §9.1.3.1; §9.1.3.2; §9.2.2.2|
+|desc|||Explains your motivation behind the gathering of several witnesses, linked with the manuscripts description|§2.1.3|
+|div|-@type(values:chapter, canto, dyad, section, group, interpolation) - @n(Recommended) -@met -@real -@xml:id -@rend(value: check, met) -@corresp -@resp -@source|Mandatory|Text division. Contains a subdivision of the text.|§3.2; §3.4.2; §4.4; §4.6; §4.7; §4.8; §4.8.1; §5.6.1; §9.1.2.2; §9.1.3.1; §9.1.3.2; §9.2.2.2|
 |editor|-@ref(Mandatory) -@xml:id|Recommended|The `<editor>` element is allowed to record the editors of the critical edition. It must contained either `<forename>`and `<surname>`, either `<name>`. |§2.1.1.2; §9.1.1; §9.2.1; §9.3.1|
 |editorialDecl||Recommended|Formulates methodological choices underlying your edition. It is especially useful if you need to give more detail than, or need to make exceptions from DHARMA Guides and practices.|§2.2.1.1; §5.2.2|
 |encodingDesc||Recommended|Use to document the encoding process and work.|§2.2; §7.2; §9.1.1; §9.2.1; §9.3.1|
@@ -39,33 +41,33 @@ An official full length release is to be published soon, you can find the candid
 |front|||Contains any prefatory matter (headers, abstracts, title page, prefaces, dedications, etc.) found before the body|§3.1; §10; §10.1|
 |g|-@type(values: numeral, filler, symbol) -@subtype||Glyph or Gaiji. Represents a non-standard character. This element indicates that no equivalent is available in DHARMA transliteration system.|§8.6.1.2|
 |gap|-@reason(values: omitted, lost, illegible, ellipsis) -@quantity -@unit(values: character, component) -@precision(value: low) -@extent(value: unknown) -@rend(value: check)||Indicates a point where material has been omitted in a transcription because it is physically missing for whatever reason.Can contained `<certainty/>`.|§5.1.3; §5.1.5; §5.5.4; §5.5.6; §5.5.7; §5.5.8; §5.5.9; §5.5.9.1; §5.5.11; §5.5.11.1; §5.5.12.2; §8.7.1; §9.1.4.2|
-|gloss|-@rend(value: check)-@rend(value: check)||Identifies a phrase or word used to provide a translation within an inscription. Must be used in correlation with `<term>`.|§4.9|
+|gloss|-@rend(value: check)||Identifies a phrase or word used to provide a translation within an inscription. Must be used in correlation with `<term>`.|§4.9|
 |handDesc|-@hands|Mandatory|Description of hands. Contains a description of all the different hands used in a manuscript. The description may be encoded as one or more paragraphs, `<p>`, but more commonly, the various paragraphs are structured as a series of `<handNote>` elements, each containing a prose description of the hands.|§2.1.3; §2.1.3.1; §8.6.1.2|
 |handNote|-@xml:id(Mandatory) -@scriptRef(Mandatory)||Note on a hand. Contains a prose description of one of the hands, containing one or more paragraphs, `<p>`.|§2.1.3; §2.1.3.1|
 |head|-@xml:lang -@type(value:editorial - mandatory if editorial header) -@rend(value: check)||Heading. Contains headings on all levels of the document. Allows you to give an editorial title to a part of your edition. This element can contained only `<foreign>` as child.|§3.2.1; §9.1.2.2; §9.2.2.2|
-|hi|-@rend (values: superscript, subscript, italic, bold, check) -@xml:lang||Distinguishes graphical features when there is not pre-existing element.|§2.1.3; §8.8.1; §9.1.4|
-|history||Recommended|Describes the history of a manuscript|§2.1.3|
+|hi|-@rend (values: superscript, subscript, italic, bold, check, unmetrical) -@xml:lang||Distinguishes graphical features when there is not pre-existing element.|§2.1.3; §8.8.1; §9.1.4|
+|history||Recommended|Describes the history of a manuscript|§2.1.3, §8.9|
 |idno|-@type(Mandatory in teiHeader with value filename)|Mandatory|Identifier.|§2.1.2; §2.1.3; §9.1.1; §9.2.1; §9.3.1|
 |institution|||Identifies an institution|§2.1.3|
 |interpretation|||Describe any additions you are making to the text edition that relate to issues of analysis or interpretation|§2.2.1.1|
 |item|-@rend(value: check)||Element as a container for each list item.|§8.8.2|
 |join|-@result -@scope -@target||Element used to recreate a fragmented text|§4.8.1; §4.8.2|
 |keywords||Recommended|List containing keywords.|§2.2.2|
-|l|-@n (mandatory) -@real -@enjamb(value: yes) -@corresp -@rend(value: check)|Mandatory in `<lg>`|Individual verse line.|§3.2; §3.4.3; §3.4.4; §3.4.5; §3.7; §4.5; §5.8.3; §6.2.2|
+|l|-@n (mandatory) -@real -@enjamb(value: yes) -@corresp -@rend(values: check, met) -@cause -part(values: I, N, F) -@met|Mandatory in `<lg>`|Individual verse line.|§3.2; §3.4.3; §3.4.4; §3.4.5; §3.7; §4.5; §5.8.3; §6.2.2|
 |label|-@rend(value: check)||Heading used to identify changes of interlocutor in a dialogue context|§3.5.3; §8.8.2|
 |lacunaEnd|||Marks the end of a lacuna|§5.5.10.2|
 |lacunaStart|||Marks the start of a lacuna|§5.5.10.2|
 |language|-@ident(mandatory)|Mandatory|Declare a language used in the file.|§2.2.2|
 |langUsage||Mandatory|Record the languages used in the file.|§2.2.2|
 |lb|-@n -@break(value: no) -@source||Line beginning. An empty element which marks the beginning of a new line.|§5.5.1; §8.1; §8.1.1|
-|lem|-@wit -@type(values: emn, conj, norm, absent_elsewhere, reformulated_elsewhere) -@rend(values: hyphenfront, hyphenback, hyphenaround,circlefront, circleback, circlearound, check) -@hand -xml:id -@varSeq(values: 1 ou 2) -@resp ||Lemma. Contains a lemma for an apparatus entry. First child of the element `<app>`.|§5.1.1; §5.1.2; §5.1.5; §5.3; §5.3.1.1; §5.3.1.2; §5.3.1.3; §5.3.2; §5.3.3; §5.4; §5.5.4; §5.5.5; §5.5.5.1; §5.5.10.1; §6.2.4.1; §6.3; §7.3.2; §8.5|
-|lg|-@met(mandatory/ might be changing) -@n(mandatory for edited text, not for supplied text) -@xml:id -@xml:lang -@part(values: I, M, F) -@prev -@next -@rend(value: check)||Line group. Marks the stanza as a whole.|§3.2; §3.2.1; §3.6; §3.7; §4.5; §4.8.2; §6.2.2|
+|lem|-@wit -@type(values: emn, conj, norm, omitted_elsewhere, reformulated_elsewhere, lost_elsewhere, retained) -@rend(values: hyphenfront, hyphenback, hyphenaround,circlefront, circleback, circlearound, check) -@hand -xml:id -@resp -@cause(value: transposition)||Lemma. Contains a lemma for an apparatus entry. First child of the element `<app>`.|§5.1.1; §5.1.2; §5.1.5; §5.3; §5.3.1.1; §5.3.1.2; §5.3.1.3; §5.3.2; §5.3.3; §5.4; §5.5.4; §5.5.5; §5.5.5.1; §5.5.10.1; §6.2.4.1; §6.3; §7.3.2; §8.5|
+|lg|-@met -@n(mandatory for edited text, not for supplied text) -@xml:id -@xml:lang -@part(values: I, M, F) -@prev -@next -@rend(value: check)||Line group. Marks the stanza as a whole.|§3.2; §3.2.1; §3.6; §3.7; §4.5; §4.8.2; §6.2.2|
 |licence| -@target(Mandatory)|Mandatory|Licence set by default to a Creative Commons licence identifying the author|§2.1.2; §3.4; §3.4.1|
 |list|-@rend(values: bulleted, numbered, check)||Contains any sequence of items organized as a list.|§8.8.2|
 |listApp|@type(values: parallels, apparatus)||Contains a list of apparatus entries.|§4.5; §6.2.1; §6.2.4; §6.3|
 |listBibl|||Citation list. Contains a list of bibliographic citations of any kind regarding the manuscript as a whole. Inside the `<listBibl>` element, one or more `<bibl>` elements are used for each bibliographic reference.|§9.3.2.2|
 |listPrefixDef||Mandatory|List of paths to external file containing some data relevant to the edition.|§2.2; §7.2|
-|listWit||Mandatory|container for all the witnesses that you will be referring to in the critical apparatus|§2.1.3; §5.2.1; §5.4|
+|listWit|-@xml:id|Mandatory|container for all the witnesses that you will be referring to in the critical apparatus|§2.1.3; §5.2.1; §5.4|
 |locus|-@type(value: displacement) -@from -@to||Indicates locations inside manuscripts|§2.1.3; §5.8.1|
 |measure|-@type (values: volume, weight, currency...) -@quantity -@unit -@commodity -@rend(value: check)||Encodes quantity references.|§8.6.3|
 |msContents||Recommend|Describes the intellectual content of any manuscript or part of it|§2.1.3|
@@ -77,10 +79,11 @@ An official full length release is to be published soon, you can find the candid
 |msPart|||Declares that your witness belongs to a manuscript composed of parts that were originally separated and that have been bound together at a later stage|§2.1.3|
 |name|||Contains a name, i.e. a proper noun or a noun phrase.|§2.1.1.2|
 |normalization|||Explain the extent of normalization and regularization applied on the text as critically edited|§2.2.1.1; §6.1|
-|note|-@type(values: altLem, prosody) -@copyOf -@corresp -@sameAs -@resp -@source -@rend(value: check)||Contains comments to the text by the editor. It can be in a freeform text pertaining to a particular lemma.|§5.1.1; §5.1.2; §5.1.5; §5.3.1.1; §5.3.1.2; §6.2.1; §6.2.2; §6.2.3; §6.2.3.1; §6.2.3.2; §7.2.3; §7.4; §8.2.1; §8.5; §9.1.4; §9.1.4.4|
+|note|-@type(values: altLem, prosody, credit, unknown) -@copyOf -@corresp -@sameAs -@resp -@source -@rend(values: check, hyphenleft, hypehnright, hyphenaround, circleleft, circleright, circlearound)||Contains comments to the text by the editor. It can be in a freeform text pertaining to a particular lemma.|§5.1.1; §5.1.2; §5.1.5; §5.3.1.1; §5.3.1.2; §6.2.1; §6.2.2; §6.2.3; §6.2.3.1; §6.2.3.2; §7.2.3; §7.4; §8.2.1; §8.5; §9.1.4; §9.1.4.4|
 |notesStmt|||Gathers any notes or remarks providing information about additions to that recorded in other parts of the bibliographic description|§9.1.1; §9.2.1; §9.3.1|
 |num|-@value -@cert(value:low) -@rend(value: check)||Numeral. Contains a numeral, including any delimiters. It does not replace the <g> element.|§8.6.1.2; §8.6.4; §8.7.1|
 |objectDesc|||Description of the physical components of your manuscript|§2.1.3|
+|orig|||Can only be used with `<choice>` for colophons to record the original form of a term.|§2.1.3.4|
 |origDate|@when||Date of creation of your manuscript|§2.1.3|
 |origPlace|||Place of creation of your manuscript|§2.1.3|
 |p|-@xml:id -@next -@prev -@part(values: I, M, F) -@rend(value: check, stanza) -@n -@corresp -@cource -@resp||Paragraph. Marks paragraphs in prose of at least one complete sentence or the equivalent of a semantic paragraph.|§2.1.2; §2.1.3; §3.2; §3.3.1; §3.6; §3.7; §4.5; §4.7; §4.8.1; §6.2.2; §8.2.1; §9.1.2.2; §9.1.3.1; §9.1.3.2; §9.2.2.3; ; §9.2.2.4|
@@ -89,21 +92,24 @@ An official full length release is to be published soon, you can find the candid
 |physDesc||Mandatory|Physical description of a manuscript|§2.1.3|
 |placeName|-@type(values: district, site, sitePart) -@subtype (values: temple, shrine, monastery, feedingHall, tank, pavillion, garden) -@ref -@key||A name of a specific location.|§8.6.2.3|
 |prefixDef|-@ident(mandatory) -@matchPattern(mandatory) -@replacementPattern(mandatory)|Mandatory|Path toward some data to complete the edition|§2.2|
-|profilDesc|||Provide metadata related to non-bibliographic aspects of the text|§2.2.2|
+|profileDesc|||Provide metadata related to non-bibliographic aspects of the text|§2.2.2|
 |projectDesc||Recommended|Use to state your project|§2.2; §2.2.1; §9.1.1; §9.2.1; §9.3.1|
-|ptr|-@target -@rend(values:title, siglum)||Pointer for bibliographical data and citing witnesses, sigla and hands|§2.1.3; §2.1.4; §7.2.3; §7.2.3.1; §7.4; §7.4.2.2; §8.4.1; §9.3.2.2|
+|ptr|-@target(mandatory) -@rend(values:title, siglum)||Pointer for bibliographical data and citing witnesses, sigla and hands|§2.1.3; §2.1.4; §7.2.3; §7.2.3.1; §7.4; §7.4.2.2; §8.4.1; §9.3.2.2|
 |publicationStmt||Mandatory|Publication statement. Groups information concerning the publication or distribution of an electronic or other text.|§2.1.2; §9.1.1; §9.2.1; §9.3.1|
+|publisher|||Provides a name for the personn responsible of a publication, used when bibliographic item not recorded with Zotero.||
 |pubPlace||Mandatory|Publication place for legal matters stating the edition.|§2.1.2; §9.1.1; §9.2.1; §9.3.1|
 |punctuation|||Explain the degree of correspondence between punctuation of your constituted text and the punctuation found in the witnesses|§2.2.1.1|
 |q|-@rend(value: check)||Quoted text not attributed to a publish source.|§8.3.2|
-|quote|-@xml:lang -@rend(values: block, check) -@type(value: base-text))||Quotation. Contains a quotation from another source or a base text segment|§3.7; §4.1; §4.2; §4.3; §4.4; §4.5; §4.6; §8.3; §8.3.1|
-|rdg|-@wit -@cause(values:eye-skip, line_omission, haplography, dittography, lexical, morphological, ordinal, syntatic, subtrative, additive) -@hand -@varSeq(values: 1 ou 2) -@sameAs -@type(values: paradosis, transposition) -@resp -@rend(value: check)||Reading. Contains an alternative reading. Must be wrapped inside the element `<app>` and follow a `<lem>`.|§5.1.1; §5.1.2; §5.1.5; §5.4; §5.5.3; §5.5.4; §5.5.5.2; §5.5.8; §5.5.11.2; §5.8.2; §5.8.3; §6.3; §8.5|
+|quote|-@xml:lang -@rend(values: block, check, stanza) -@type(value: base-text, diplomatic, normalized, translation)||Quotation. Contains a quotation from another source or a base text segment|§3.7; §4.1; §4.2; §4.3; §4.4; §4.5; §4.6; §8.3; §8.3.1|
+|rdg|-@wit -@cause(values:eye-skip, line_omission, haplography, dittography, lexical, morphological, ordinal, syntatic, subtrative, additive, orthographical, transposition) -@hand -@sameAs -@type(value: paradosis) -@resp -@rend(value: check)||Reading. Contains an alternative reading. Must be wrapped inside the element `<app>` and follow a `<lem>`.|§5.1.1; §5.1.2; §5.1.5; §5.4; §5.5.3; §5.5.4; §5.5.5.2; §5.5.8; §5.5.11.2; §5.8.2; §5.8.3; §6.3; §8.5|
 |ref|@target -@cRef -@rend(value: check)||Reference. Defines a reference to another inscription in the DHARMABase.|§2.2; §7.4; §7.4.1; §7.4.2; §8.3.1|
+|reg|||Can only be used with `<choice>` for colophons to record the regularised form of a term.|§2.1.3.4, §8.9|
 |repository||Mandatory|Contains the name of a repository which stored the inscription.|§2.1.3|
 |resp||Recommended|Responsibility. Contains a phrase describing the type of responsibility, e.g. transcription, conversion, proof-reading.|§2.1.1.2|
 |respStmt||Recommended|Statement of responsibility. Particularly important when listing the contributors to an edition.|§2.1.1.2|
 |revisionDesc||Mandatory|Revision description. Summarizes the revision history of the text.|§2.2.3; §7.2.1; §9.1.1; §9.2.1; §9.3.1|
-|roleName|-@type(values: king, subordinateRuler, landlord,godLegalEntity, priest, brahmin, monk, merchant, artisan, brahminDelegate, regionalDelegate, officer, dancer, singer, peasant, shepherd, unknown) -@subtype(values: donor, donee, founder, administrator, inChargeDonation, witness, orderIssuer, orderAddressee, auditor, beneficiaryMerit, commemoratedPerson, scribe, composer, handwriter, engraver, sealer/solderer) -@rend(value: check)||Contains a name component which indicates that the referent has a particular role or position in society, such as an official title or rank.|§8.6.2.2|
+|roleName|-@type(values: king, subordinateRuler, landlord, godLegalEntity, priest, brahmin, monk, merchant, artisan, brahminDelegate, regionalDelegate, officer, dancer, singer, peasant, shepherd, unknown) -@subtype(values: donor, donee, founder, administrator, inChargeDonation, witness, orderIssuer, orderAddressee, auditor, beneficiaryMerit, commemoratedPerson, scribe, composer, handwriter, engraver, sealer/solderer) -@rend(value: check)||Contains a name component which indicates that the referent has a particular role or position in society, such as an official title or rank.|§8.6.2.2|
+|rs| -@type -@subtype -@key||Still under discussion - should be use to encode names.|§8.6.2|
 |said|-@who(recommended in case of ambiguity) -@rend(value: check)||Direct speech quotations|§3.5.2|
 |samplingDesc|||Record free-text information about inclusion or omission of portions of the text, manuscripts, or witnesses|§2.2.1.2|
 |schemaRef|-@type -@key @url(mandatory)|Mandatory|Point to any external customization file of the TEI.|§2.2; §2.2.1.3|
@@ -114,7 +120,7 @@ An official full length release is to be published soon, you can find the candid
 |sourceDesc||Mandatory|Source description. Mandatory part of the header and describes the source material. Sub-element of `<fileDesc>`. Record details about the original manuscripts and printed texts used as witnesses in establishing your critical edition|§2.1.3; §9.1.1; §9.2.1; §9.3.1|
 |sp|-@rend(value: check)||Individual speech in a dramatic text|§3.5.1|
 |space|-@type(values: vacat, binding-hole, defect, feature, ascender, descender, other) -@unit(values: characters) -@quantity||Space is an empty element which indicates a "blank space". DHARMA does not follow regular TEI practice and is not Epic conformant either regarding the attributes.|§8.6.1.1; §8.6.1.1.1; §§8.6.1.1.2|
-|span|-@type(values: omissionStart, omissionEnd)||Mark the start and the end of a scribal omission|§5.5.11.2|
+|span|-@type(values: omissionStart, omissionEnd, reformulationStart, reformulationEnd)||Mark the start and the end of a scribal omission|§5.5.11.2|
 |speaker||Mandatory child of `<sp>`|Specialized heading or label, giving the name of one or more speakers in a dramatic text|§3.5.1|
 |stage|||Identify content that can be identified as a stage direction|§3.5.1|
 |subst|||Substitution. Wraps the combination of deletion and addition.|§5.5.12.3|
@@ -129,9 +135,9 @@ An official full length release is to be published soon, you can find the candid
 |text|-@xml:space(Default value must be ‘preserve’) -@xml:lang|Mandatory|Contains a single text of any kind.|§3.1; §7.3; §8.9.1; §9.1.2.1; §9.2.2.1; §9.3.2.1|
 |textClass|||Contain the element `<keywords>`.|§2.2.2|
 |textLang|-@mainLang (Recommended)||Describes the languages and writing systems identified in the manuscript|§2.1.3|
-|title|-@type (values: main, sub) -@subype (values: editorial, base-text, commentary, translation) -@xml:lang (only if the title isn't in English) -@n (Only if more than one title bear the same @subtype) -@level(values: a) -@rend(values: plain, check)|Mandatory in the `<teiHeader>`|Contains a title for any kind of work.|§2.1.1.1; §2.1.3; §7.2.3; §8.4.2; §9.1.1; §9.2.1; §9.3.1|
+|title|-@type (values: main, sub) -@subype (values: editorial, base-text, commentary, translation) -@xml:lang (only if the title isn't in English) -@n (Only if more than one title bear the same @subtype) -@level(values: an m) -@rend(values: plain, check)|Mandatory in the `<teiHeader>`|Contains a title for any kind of work.|§2.1.1.1; §2.1.3; §7.2.3; §8.4.2; §9.1.1; §9.2.1; §9.3.1|
 |titleStmt||Mandatory|Title statement. Contains information on the title, editor and other people who have been involved in the edition.|§2.1.1; §9.1.1; §9.2.1; §9.3.1|
-|unclear|-@reason (values: eccentric_ductus) -@cert(values: low) -@rend(value: check)||Stands in EpiDoc for any character “of which at least traces survive, but not adequately to identify the letter unambiguously outside of its context”.|§2.1.1; §5.5.6; §8.7.1|
+|unclear|-@reason(values: illegible, inaudible, faded, background_noise) -@cert(values: low) -@rend(value: check)||Stands in EpiDoc for any character “of which at least traces survive, but not adequately to identify the letter unambiguously outside of its context”.|§2.1.1; §5.5.6; §8.7.1|
 |variantEncoding|-@method(mandatory; values: parallel-segmentation, double-end-point and location-referenced) -@location(mandatory; values: internat, external)|Mandatory|Declare the methodology chosen to encode the apparatus|§2.2.1.4|
-|witDetail|-@wit -@type(values: pc, ac) -@rend(value: check)||Specialized type of note, used to declare an ante and post correctionem|§5.5.4; §8.2.2|
+|witDetail|-@wit -@type(values: pc, ac,retained, rejected) -@rend(value: check)||Specialized type of note, used to declare an ante and post correctionem as well as span omission and transposition|§5.5.4; §8.2.2|
 |witness|-@xml:id (Mandatory)|Mandatory|Declaration of witnesses|§2.1.3|
